@@ -1,0 +1,91 @@
+## Level Assessment
+
+1. How long have you been studying Japanese?
+
+2. Which JLPT level are you currently studying for, or have you already passed?
+
+3. Can you comfortably use:
+   - Casual and polite forms?
+   - Potential, passive, causative forms?
+   - Conditional forms (と, ば, たら, なら)?
+   - Complex grammar like のに, ために, ようになる?
+
+4. Are you comfortable with:
+   - Basic kanji (N5-N4 level)?
+   - Intermediate kanji (N3-N2 level)?
+   - Advanced kanji (N1 level)?
+
+5. Could you write a quick sample sentence in Japanese about anything you like, so I can see your current level?
+
+> 1. About 2 years. 2. I haven’t taken any proficiency exams, but according to BunPro, I’ve studied 100% of N5 grammar, and have gotten to SRS level 12 with most of it. I’ve only studied about 70% of the N5 vocab, and have mastered maybe 1/3 of it. N4 I’ve studied 90% of the grammar, mastered about 40%, and I’ve barely scratched the surface of the vocabulary. I have a tiny smattering of higher level material. 3. I’m can use casual and polite forms, although from time to time I’ll make an error inflecting a verb (I recently forgot that うbecomes わ in conjugations). I’m decent at understanding the use of potential, causative and passive. I’m also pretty good at understanding the conditional forms, but (and this is the case generally with me) I might have trouble using them to generate sentences. I understand some complex grammars, like, I definitely know のに, though I have mostly practiced that in the context of “although”. 4. I’ve achieved level 23 in Wanikani (are you familiar with it? It breaks the 2200 up into 60 levels and teaches you radicals, kanji, and vocab at each level), but I do not know what N levels those Kanji are.
+
+> in general, I’ve focused entirely on comprehension, written and spoken. I don’t do any speaking practice, other than when I read out loud to myself. Because I want to learn to pronounce things as close to perfectly as I can, I’m studying phonetics before I start speaking, so I don’t develop too many bad habits.
+
+1. **Primary goals**: What do you ultimately want to do with Japanese? (Read novels? Watch anime without subtitles? Live in Japan? Business use?)
+
+2. **Timeline**: Do you have a specific timeframe for reaching certain milestones?
+
+3. **Daily practice**: How much time can you dedicate to Japanese study each day/week?
+
+4. **Learning style**: What types of practice have you found most effective for you?
+
+5. **Challenges**: What aspects of Japanese have been most difficult for you?
+
+6. **Resources**: Besides WaniKani, BunPro, and Dōgen's course, what other resources are you using?
+
+7. **Immediate priorities**: What area do you feel needs the most improvement right now?
+
+> 1. My goals all surround cultural acquisition. Yes, I want to watch anime without subtitles and read manga, as well as Japanese cinema, music, etc. but beyond that, I want to understand Japanese culture, and you can only go so far with that without being able to interact with natives and native media. Plus, I want to perfect (as much as I can) a standard dialect, because that’s just the kind of person I am. Every time I learn a language, I want it to sound natural when I speak it. I want to be able to speak naturally with people in a wide range of contexts, not just 丁寧な日本語. Writing by hand is less of a priority for me for now, but let's keep that in mind for the future. 
+> 2. I’m not all that focused on pace, but I want to travel to Japan within the next year, and by then I would like to be able to at least get around speaking Japanese, and I want the people I meet to be able to tell that even if I’m still learning, I’m serious about it… the kind of thing where someone might bother to correct my pronunciation, rather than just letting it go as something not worth mentioning.
+> 3. I have been putting in at least an hour of study most every day for some time now, though some days are so busy I can only do a 15 minute review, and others I’m so focused on it I wind up spending 2-3 hours doing various things related to study.
+> 4. My current solo practice has the advantage of being purely on my own terms, because I can do it whenever I can, and not be committed to a classroom schedule, but I’m sure it’s less optimal than if I also had a tutor. I find using SRS study systems very easy, from a motivation and accomplishment perspective. I’m happy to spend 20 - 40 minutes on that every day. I found it extremely productive to read the first volume of よつばと！with the BunPro community forum beginner’s book club, because BunPro has learning decks that have all the grammar and vocabulary in the whole thing, in order. It’s somewhat tedious, but I have also watched movies in a 3-pass system where I’ll watch each scene without subtitles, then with English subtitles, and then again without, before going to the next scene. It’s not as immersive as using Japanese subtitles, which is something I’m trying now. Unfortunately most of those resources are illicit, due to distribution rights. And for a while now, whenever I see anything written in an anime I'm watching, I'll pause and make sure I can read it, and look it up if I can't (not the credits, though). And this barely counts, but while I'm watching English subtitled anime, I am often trying to follow how the Japanese I'm hearing means the translation I'm reading, and sometimes I'll rewind and listen a few times.
+> 5. BunPro is great because it makes me fill in the blank with vocab or grammar, and although you *can* just read the target term in English and type in your answer, I try to read every sentence and understand them. What I’m finding is that often I can understand each clause in its entirety, but still have serious difficulty synthesizing the meaning because I incorrectly assumed something implied by the text. Sometimes it’s straightforward, like I think the speaker is talking about themselves, but they’re talking about someone else, or the other way around, and sometimes it’s just that I can’t figure out what the meaning is at all. Of course sentence order is part of that, but even when I can look over a sentence for as long as I like and puzzle it out backwards, I still sometimes have difficulty.
+> 6. I listen to a lot of this Nihongo con Teppei podcast: https://teppei.nihongoconteppei.com , https://podcasts.apple.com/us/podcast/japanese-podcast-for-beginners-nihongo-con-teppei/id1471500012. It's great because each episode is short, like under 5 minutes, and he speaks in a mixture of clearly enunciated and normal speech. I've tried many other similar things, and bookmarked a lot of things that look good but are too advanced, but for the last 10 months I've only listened to him, and I'm not even half way through his back catalog. I recently came across a YouTuber who is incredible -- 色々な日本語(https://youtube.com/@iroironanihongo?si=F5Uo92NiSF3c361h). He screenshares manga and talks about what's going on, and he explains more complicated vocab and grammar in simpler Japanese, plus is also pantomimes in his PiP window and draws on the screen with a digital stylus to add furigana, or emphasize things, or further convey his meaning during explanations. While watching the first video of his that I came across, I realized to my surprise and delight that I could understand essentially everything he was saying, which was a new milestone for me. There are several other YouTubers I've watched... I used to watch a lot of Japanese Ammo (https://youtube.com/@japaneseammowithmisa?si=fC-vopT7dhIk57Uf) but not as much these days, and she's stopped making new content. Teppei also has a YT channel (https://youtube.com/@nihongoconteppei?si=oNBj6-8FBAU8chQw) but I haven't used that as much. I'm just starting to use the material from Speak Japanese Naturally (https://youtube.com/@speakjapanesenaturally?si=CnqY5X4kXIwx4yzY), one of a few creators besides Dogen that include pitch accent content, as well as general listening practice with vlogs of activities. She has a course, and a community site, but I haven't checked it out yet. I know how to use Anki, but haven't been using it for anything since both WaniKani and BunPro implement an SRS. And just recently Dogen released a pitch accent training SRS system called Emurse (https://emurse.io/course/RgTkFdB), which I've started using. There are Anki decks that cover Dogen's course, but now that Emurse is available, I'm using that instead. I have also used the Todaii Japanese reader, which facilitates learning by reading and listening to news articles, but I haven't been doing that lately. For a while I practiced writing Kanji using a few iPad apps, but it was so time consuming I gave it up for now.
+> 7. Once I recognized that I could comprehend simple spoken Japanese, I decided that it was time to start focusing on phonetics and pitch accent. I want to get that right before I start practicing speaking so I can avoid accidentally creating bad habits. So that, along with starting to express myself by writing, seem to be my current priorities.
+> 
+> While I was composing this answer, it occurred to me that one of the ways you can help is by helping to manage my resources. Not just by determining which I should be using and how often, but also cataloging them and systematizing the process of finding and evaluating which are worthwhile at my current stage, and keeping ones that are too advanced in mind for later, as I progress. Might as well keep track of expenses, too... I have lifetime subscriptions to WK and BunPro, so they're not expenses, but Emurse costs $50 a year, and I support Dogen on Patreon for $108/year to get access to his pitch accent course, and 色々な日本語 at $3/month.
+
+I want to concretize exactly how to implement this on a daily basis, especially where it comes to daily activities (SRS reviews) and on which days I’ll do which non-daily activities. That way I can handle days where I can’t do my full practice by just doing the bare minimum SRS reviews. I can either catch up by doing those on another day that week, or just let one of those things go that week. We can incorporate morning and evening slots. I always review in the morning, either at home or on my commute, and often have time for more things, and will put time in most, but not every, evening.
+> 
+> On a weekly/monthly basis, I would prefer to track effort, rather than progress. I mainly want to make sure I’m putting in the time in the appropriate places, because I trust that if I do that, I will improve. We can deal with progress assessment on an ad-hoc basis. Maybe once every few months, we can take a measurement.
+
+> I work a typical M-F week, although I'm running a small startup so it's not 9-5, sometimes I work later. I used to get up at 6 every morning, with plenty of time to do a morning routine that includes japanese studies. That's my goal, but I'm currently re-establishing that habit after a significant disruption. I'm only managing to do that about 20% of the time these days, but we should assume I will get there. Monday nights I have a group game from 6:30pm  - 9pm, and then periodically on Friday evenings I have dinner with my mom and don't get home until 10pm. My commute to work is a 30 - 45 minute subway ride, it's 10 minutes up to my mom's and then at night between 45 and 60 minutes home.
+> 
+> In addition to my regular monday night game, Some weeknights I do other leisure activities, but it's not predictable. I've had weeks with no nights out,  and weeks with 3 more. Perhaps we can start with an estimate of one.
+> 
+> I watch some TV shows in the evenings with my wife. Some nights there's no TV, some nights there's an hour long show we're watching, other nights we binge a couple of episodes of Deep Space Nine.
+> 
+> I can also make time for study during a lunch break, but I can get really hyperfocused and it's best if I only do work that can be completed in 15 minutes or less, or I risk losing focus on my work. A small review queue, for example. If my queue is longer, it's hard for me to tear myself away, even though I can technically stop.
+> 
+> So that's the general shape of my life routines. Now some more detail regarding my studies.
+> 
+> The only things I've been completely regimented about until just now are WK and BP. Everything else, like reading manga with the BP community book club, was periodic and not part of a standing routine.
+> 
+> I can almost always review WK on the train to and from work, and frequently do, when I'm not watching something. BP I can also review, but there's some friction there because the app does not work offline. In practice, I will often flip back and forth between them, doing WK when out of signal range, then flipping back to BP when I get signal back to submit my last answer and make progress until I go out of range, switching back to WK when that happens.
+> 
+> I can also do those reviews on foot, though it goes a bit slower because I need to stay aware of my surroundings. Doing reviews on foot and during commutes or cab rides was a good way to make my way through a lot of reviews when I was pushing 15 items learned every day, but it's less critical when my review load is low.
+> 
+> When I have had plenty of time in the morning, even though it's more efficient to do reviews on the train because I *can* do them on the go, I probably get more out of them when I'm completely focused on them.
+> 
+> On most days when my routine is solid, I review in the morning, on the train if I feel like it, and unless it gets too late because I've spent the evening on other leisure, or I've gotten drunk or stoned, I'll clean out my reviews in the evening. That way I seldom have more than 12 hours between reviews.
+> 
+> So, broadly speaking, I have a morning slot and a night slot, and other opportunities here and there.
+> 
+> As another SRS practice, Emurse slots nicely into my morning/evening core routine, *except* it simply cannot be done on the go.
+> 
+> Podcasts, like Nihongo Con Teppei, I have been listening to in two situations. Quite often as I go to bed, setting a sleep timer for 15 minutes. Sometimes I am awake for all of that, other times I drift off. There's so much back catalog, and frankly no reason why I wouldn't benefit from listening to the entire catalog a second time, so I don't worry about missing episodes. Sometimes I listen in the morning as I do light chores, and sometimes I'll listen while commuting or otherwise going somewhere by foot or transit. I have considered that listening to more episodes has the benefit of exposure, while re-listening to one episode over and over again might have other listening benefits, but I have not been re-listening so far.
+> 
+> I can also watch YT videos like いろいろ日本語 on the go, but only if I can be seated, otherwise I can't focus on the visuals enough to make it worthwhile.
+> 
+> I can also read manga on my commute, subject to the same considerations as the rest of the things I can do commuting.
+> 
+> IMO doing reviews, listening practice, and other studies on the go is a compromise between learning effectiveness and overall life efficiency, so if it allows me to make room for my daily focus activities during my best study opportunities, it's worth doing in some cases.
+
+> I like the idea of you including a token amount of japanese when you reply to me, I usually recognize those things and I can always ask for clarification... more reading practice!
+
+> I may respond in Japanese where I can, of course correct any mistakes I make.
+
+> While not necessarily ideal, I *can* work on writing practice on my commute, and it's way more possible than something like pitch accent practice.
+
+> I intentionally don't use the kanji for a word if I don't already know it so you can derive more detail about my knowledge.
+

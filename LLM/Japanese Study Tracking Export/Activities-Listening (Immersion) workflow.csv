@@ -1,0 +1,5 @@
+Step,Name,Description,Time,LLM Role
+1,Preparation,Select content and prepare environment,5 min,Resource recommendation based on current level
+2,Listen,Listen without pausing for general understanding,Media Duration,N/A (independent activity)
+4,Reflection,Consider anything that stood out,5 min,N/A (independent activity)
+6,Documentation,Submit logs,5 min,Analyze comprehension patterns over time and resource level fit

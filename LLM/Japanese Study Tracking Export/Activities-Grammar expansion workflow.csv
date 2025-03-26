@@ -1,0 +1,6 @@
+Step,Name,Description,Time,LLM Role
+1,Selection,Choose grammar point from expansion queue based on progression targets,5min,Confirm selection is appropriate for level
+2,Comprehension,Review explanation and examples in BunPro or other resources,5min,None
+3,Analysis,Identify usage patterns and contexts; note similar structures,5min,Provide additional contextual examples
+4,Production,Create 3-5 original sentences using the target pattern,10min,Review for accuracy and naturalness
+5,Integration,Connect to previously learned points; identify combinations,5min,Suggest useful grammar combinations

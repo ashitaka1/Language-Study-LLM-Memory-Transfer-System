@@ -1,0 +1,290 @@
+{
+	"WaniKani": {
+		"Learn": 
+		{
+			"tableName": "SRS study log",
+			"fields": [
+				{
+					"fieldName": "App",
+					"type": "text",
+					"value": "WaniKani"
+				},
+				{
+					"fieldName": "Studied",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Notes",
+					"type": "text",
+					"advanceLog": false
+				}
+			]
+		},
+		"Review":
+		{
+			"tableName": "SRS review log",
+			"fields": [
+				{
+					"fieldName": "App",
+					"type": "text",
+					"value": "WaniKani"
+				},
+		{
+					"fieldName": "Reviewed",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Accuracy",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Notes",
+					"type": "text",
+					"advanceLog": false
+				}
+			]
+		}
+	},
+	"BunPro": {
+		"Learn Vocab": {
+			"tableName": "SRS study log",
+			"fields": [
+				{
+					"fieldName": "App",
+					"type": "text",
+					"value": "BunPro"
+				},
+				{
+					"fieldName": "Studied",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Notes",
+					"type": "text",
+					"advanceLog": false
+				}
+			]
+		},
+		"Learn Grammar": {
+			"tableName": "SRS study log",
+			"fields": [
+				{
+					"fieldName": "App",
+					"type": "text",
+					"value": "BunPro"
+				},
+				{
+					"fieldName": "Studied",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Notes",
+					"type": "text",
+					"advanceLog": false
+				}
+			]
+		},
+		"Review": {
+			"tableName": "SRS review log",
+			"fields": [
+				{
+					"fieldName": "App",
+					"type": "text",
+					"value": "BunPro"
+				},
+				{
+					"fieldName": "Reviewed",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Accuracy",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Notes",
+					"type": "text",
+					"advanceLog": false
+				}
+			]
+		}
+	},
+	"Grammar Expansion": {
+		"Study": {
+			"tableName": "Grammar expansion log",
+			"fields": [
+				{
+					"fieldName": "Resouce",
+					"type": "text",
+					"advanceLog": true
+				},
+				{
+					"fieldName": "Practice Type",
+					"type": "text",
+					"advanceLog": true
+				},
+				{
+					"fieldName": "Examples Created",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Notes",
+					"type": "text",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Success Rate",
+					"type": "number",
+					"advanceLog": false
+				}
+			]
+		}
+	},
+	"Listening": {
+		"Immersion": {
+			"tableName": "Listening immersion log",
+			"fields": [
+				{
+					"fieldName": "Date",
+					"type": "date",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Resouce",
+					"type": "text",
+					"advanceLog": true
+				},
+				{
+					"fieldName": "Episode",
+					"type": "text",
+					"advanceLog": true
+				},
+				{
+					"fieldName": "Media Length",
+					"type": "text",
+					"advanceLog": true
+				},
+				{
+					"fieldName": "Comprehension Rating",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Notes",
+					"type": "text",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Complete",
+					"type": "boolean",
+					"advanceLog": false
+				}
+			]
+		},
+		"Study": {
+			"tableName": "Listening study log",
+			"fields": [
+				{
+					"fieldName": "Resouce",
+					"type": "text",
+					"advanceLog": true
+				},
+				{
+					"fieldName": "Episode",
+					"type": "text",
+					"advanceLog": true
+				},
+				{
+					"fieldName": "Media Length",
+					"type": "text",
+					"advanceLog": true,
+					"nocache": true
+				},
+				{
+					"fieldName": "First Pass Rating",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Second Pass Rating",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Third Pass Rating", 
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Words Mined",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Added to SRS",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Notes",
+					"type": "text",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Complete",
+					"type": "boolean",
+					"advanceLog": false
+				}
+			]
+		}
+	},
+	"Phonetics": {
+		"Study": {
+			"tableName": "Phonetics study log",
+			"fields": [
+				{
+					"fieldName": "Resouce",
+					"type": "text",
+					"advanceLog": true
+				},
+				{
+					"fieldName": "Notes",
+					"type": "text",
+					"advanceLog": false
+				}
+			]
+		},
+		"Review": {
+			"tableName": "SRS review log",
+			"fields": [
+				{
+					"fieldName": "App",
+					"type": "text",
+					"value": "Emurse"
+				},
+				{
+					"fieldName": "Reviewed",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Accuracy",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
+					"fieldName": "Notes",
+					"type": "text",
+					"advanceLog": false
+				}
+			]
+		}
+	}
+}

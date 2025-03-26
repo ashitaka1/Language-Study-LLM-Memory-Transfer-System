@@ -1,0 +1,13 @@
+Category,Emoji,Name,Description
+Time,⏰,Very Short,<15 minutes; quick activities completed in brief moments
+Time,⏱️,Medium,15-30 minutes; standard activity timeframe
+Time,⏱️⏱️,Long,30-60 minutes; extended activities
+Time,⏱️⏱️⏱️,Very Long,>60 minutes; comprehensive deep engagement
+Focus,🧠,Full Focus,Requires complete concentration and distraction-free environment
+Focus,👁️,High Focus,Requires significant attention but can handle minor interruptions
+Focus,👂,Medium Focus,"Can be done during light activities (walking, commuting)"
+Focus,🎧,Low Focus,Can be done as background activity with divided attention
+Context,📴,Offline Only,Activity can be done completely offline
+Context,🔌,Online Required,Activity requires internet connection
+Context,📱,Flexible,Activity works in both online/offline contexts
+Context,🏠,Location-specific,Activity requires specific location/environment

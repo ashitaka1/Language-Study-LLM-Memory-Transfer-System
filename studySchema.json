@@ -247,7 +247,7 @@
 	},
 	"Phonetics": {
 		"Study": {
-			"tableName": "Phonetics study log",
+			"tableName": "Phonetics Study log",
 			"fields": [
 				{
 					"fieldName": "Resouce",

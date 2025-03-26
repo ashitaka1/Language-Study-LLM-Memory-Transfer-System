@@ -463,3 +463,7 @@ This section documents planned improvements to the learning system that have bee
 - Balance between reading, listening, speaking, writing
 - Output practice scheduling patterns
 - Immersion activity tracking
+
+## Core Learning System Principles
+
+6. **Self-Directed Assessment**: This system assumes learning is managed by a motivated, autonomous individual capable of meaningful self-assessment. Completion conditions and progress metrics are intentionally flexible rather than rigidly prescriptive, empowering the learner to judge mastery through practical application and personal experience.

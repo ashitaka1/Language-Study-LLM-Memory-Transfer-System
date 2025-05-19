@@ -1,8 +1,0 @@
-Step,Name,Description,Time,LLM Role
-1,Preparation,Select content and prepare environment,5 min,Resource recommendation based on current level
-2,First Pass,Listen without pausing for general understanding,Media Duration,N/A (independent activity)
-3,Second Pass,Selective pausing to identify vocabulary gaps,1.5x Media Duration,N/A (independent activity)
-4,Vocabulary Processing,Look up and document new vocabulary,10-15 min,Assist with definitions and 品詞 classification
-5,Third Pass,Confirm understanding with new vocabulary,Media Duration,N/A (independent activity)
-6,Documentation,"Submit logs, vocab, and select SRS additions",5 min,Analyze comprehension patterns over time and resource level fit
-7,SRS Integration,Add selected vocabulary to learning systems,5 min,Suggest optimal SRS distribution strategy

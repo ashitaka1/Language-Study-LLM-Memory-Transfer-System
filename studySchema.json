@@ -255,6 +255,11 @@
 					"advanceLog": true
 				},
 				{
+					"fieldName": "New items",
+					"type": "number",
+					"advanceLog": false
+				},
+				{
 					"fieldName": "Notes",
 					"type": "text",
 					"advanceLog": false

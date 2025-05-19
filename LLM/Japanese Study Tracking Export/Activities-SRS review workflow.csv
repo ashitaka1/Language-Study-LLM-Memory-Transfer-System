@@ -1,5 +1,0 @@
-Step,Name,Description,Time,LLM Role
-1,Review Session,Complete due reviews in priority order (BP → Emurse → WK),Target time per app,N/A (independent activity)
-2,Session Logging,"Record duration, items reviewed, accuracy % for each app",1 min,N/A (independent activity)
-3,Report & Analysis,Submit logs to LLM for trend analysis,1 min,Analyze 7-day averages and recommend SRS adjustment
-4,Weekly Adjustment,Adjust new item rate based on LLM recommendations,1 min,Provide specific addition rate recommendations

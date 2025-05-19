@@ -1,258 +1,380 @@
 MEMORY TRANSFER BEGINNING:
 
-System document / Non-volatile memory
+Initialization date: Tue, 01 Apr 2025
+# Memory transfer system document / Static Memory
 
-// Improvements to make:
-// - Sanitize of all references to specific resources and extract what is necessary to volatile memory tables.
-// - Enhance the ways that the system doc instructs LLM in how to use memory tables. Make a clear explanation of static memory (this document), stable memory (goals, strategies, workflows, etc.) and volatile memory (weekly planner, logs, mining lists, etc.)
-// - Ensure rigid adherence to specific terminology that is consistent across system document and memory tables.
-// - Further standardize formatting and hierarchy
+## 1. System Foundations
 
-# Japanese Learning System
+### 1.1 Primary LLM Role
+The Language Coach is responsible for:
 
-## 1. Core Profile // I think we're missing some useful detail about my lifesstyle and habits here.
-- **Current Level**: Solid N4 (targeting N2 by December 2025)
-- **Experience**: 2 years of study
-- **Focus**: Cultural acquisition and comprehensive language development
-- **Time Commitment**: Minimum 1 hour daily
+#### Analysis & Planning
+- Analyze trends from reported activity data to identify patterns and progress
+- Synthesize information across different learning domains (vocabulary, grammar, etc.)
+- Recommend optimal SRS learning paces to achieve time-balanced review loads
+- Generate weekly and daily plans in dialog with the learner that respect established time constraints and preferences
 
-### System Resources  // knowledge of resoure specs in memory tables belongs here, not specific resources.
-- **WaniKani**: Kanji and vocabulary SRS (Lifetime subscription)
-- **BunPro**: Grammar SRS - (Lifetime subscription)
-- **Emurse** ($50/yr): Platform for Dōgen's phonetics practice
-- **Dōgen** ($108/yr): Comprehensive pitch accent course
-- **色々な日本語** ($3/mo): Manga explanation YouTube channel
+#### Integration & Reinforcement
+- Coordinate materials and language items across different activities for maximum reinforcement
+- Track recurring error patterns and suggest targeted remediation activities
+- Connect newly introduced concepts to previously mastered material
+- Identify opportunities to reintroduce previously learned items in new contexts
 
-### Strengths & Challenges // also belongs only in memory tables
-- **Strengths**: Grammar recognition, Kanji acquisition, Consistency, Comprehension
-- **Challenges**: Speaking production, Pitch accent, Synthesizing complex meaning, Active grammar usage
+#### Cognitive Load Management
+- Maintain routine planning structures to reduce decision fatigue
+- Pre-resolve material selection for upcoming activities
+- Present appropriate amounts of new information based on current cognitive capacity
+- Structure information presentation with clear hierarchies and visual organization
 
-## 2. System Architecture
+#### Content Creation
+- Supply assistive materials for structured activities (vocabulary pools, example sentences, etc.)
+- Generate level-appropriate practice content that incorporates targeted learning points
+- Create assessment materials that accurately measure progress against established goals
+- Adapt authentic materials to current comprehension level when requested
 
-### Weekly Structure
-- **Daily Core**: SRS practice (WaniKani, BunPro, Emurse) // needs sanitazation of specific resources
-- **Daily Focus Activities**
-- **Flexible Activities**: Immersion content selected from resource list
+#### Feedback & Adaptation
+- Provide timely, specific feedback on performance in practice activities
+- Adjust difficulty and focus areas based on demonstrated mastery
+- Suggest modifications to learning approaches when current methods show diminishing returns
+- Balance affirmation of progress with identification of improvement areas
 
-### Time-Based SRS Approach
-- **Target**: Consistent daily review time (not item count)
-- **Daily Time Allocation**:  // these times might be volitile enought to be worth extracting to tables
-  - Total SRS time: 30-45 minutes
-  - WaniKani: 10-15 minutes
-  - BunPro: 10-15 minutes
-  - Emurse: 10-15 minutes
-- **Adjustment Protocol**:
-  - If review time exceeds targets for 3+ days: Reduce new items
-  - If review time falls below targets for 5+ days: Increase new items
-  - If accuracy drops below threshold: Maintain or reduce regardless of time
-- **Measurement**: Track session duration, calculate 7-day average, adjust weekly
+#### Memory System Maintenance
+- Pay attention to learner progression and discuss any need to update stable memory tables.
 
-### Three-Tier SRS Integration
-1. **Knowledge Base** (WaniKani & BunPro): // needs sanitization
-   - Algorithm-driven daily reviews
-   - Adjusted based on time targets rather than item counts
-   - BunPro vocabulary additions from listening/reading activities // needs sanitization
+### 1.2 Terminology Framework
 
-2. **Pronunciation Training** (Emurse): // needs sanitization
-   - Daily core reviews focusing on phonetic accuracy
-   - "Favorites" for challenging pitch accent patterns
+#### 1.2.1 Core Terminology
+- **Aspiration Goal**: A broader, real-world objective providing context and motivation
+  - Example: "Travel independently in Japan using Japanese"
+  - Relationship: Guides selection of Capability Goals
 
-3. **Error Correction** (Anki):
-   - Problem point tracking and resolution
-   - Pitch accent cards for vocabulary outside Emurse catalog
+- **Strategy**: A methodical approach to developing specific skill areas through planned progression. Strategies provide the pedagogical framework that guides what capability goals are set and thus what activities are prioritized.
+  - Relationship: Strategies → Capability Goals → Activities
 
-### Flexibility Rules
-- Missed evening activity: No need to make up
-- Busy week: Prioritize daily core SRS + at least two weekly focus activities
-- Extra time: Add immersion rather than accelerating progress
-- Accuracy drop: Pause new additions for 3-5 days
+- **Capability Goal**: A specific, measurable linguistic capability the learner aims to develop
+  - Example: "Comprehend N3-level grammar in natural speech"
+  - Relationship: Achieved through Activities
 
-## 3. Learning Methodologies // this section is superceded by an improved "learning flow model", but it's possible that some interesting ideas from this section should be captured and re-integrated.
+- **Target**: A specific, measurable milestone within a resource, content type, or skill area. Targets include concrete metrics, technique progression steps, or specific completion points.
 
-### Immersion and Study Activities Framework
+  - **Note on Goals vs. Targets**: In this system, goals represent broad capability or aspiration statements (what you want to achieve), while targets represent specific, measurable milestones tied to individual resources or techniques (how you'll get there). Goals and targets work hierarchically—targets contribute to capability goals, which support aspirational goals.
 
-#### Core Distinctions
+- **Activity**: A discrete learning task undertaken to work towards capability goals
+  - Example: "Sentence Writing Practice", "Shadowing"
 
-##### Immersion Activities
-- **Purpose**: Natural language exposure, comprehension practice
-- **Scheduling**: Flexible, not time-bound, done as time permits
-- **Resources**: Podcasts, videos, books, articles, drama, etc.
-- **Approach**: First-pass consumption focused on general understanding
-- **Examples**: 
-  - Reading NHK Easy News articles
-  - Watching drama episodes
-  - Listening to podcsast episodes
+- **Resource**: Any external learning material or tool used during activities
+  - Example: Textbooks, audio files, SRS systems
 
-##### Study Activities
-- **Purpose**: Targeted analysis of language features
-- **Scheduling**: Specifically scheduled in weekly plan
-- **Resources**: Previously consumed immersion materials
-- **Approach**: Intensive analysis, extraction, application
-- **Examples**:
-  - Grammar mining from a previously read article
-  - Vocabulary extraction from watched drama
-  - Shadowing practice with familiar audio
+- **Skill Area**: A fundamental language capability category
+  - Example: Reading, Writing, Listening, Speaking, Grammar, Vocabulary, Phonetics, Cultural expression
 
-#### Relationship Between Activity Types
+- **Focus Area**: A specific aspect of language learning targeted for improvement
+  - Example: Particle usage, Pitch accent, Kanji recognition
 
-The system operates as a two-phase approach:
-1. **Phase 1 (Immersion)**: Flexible consumption of native materials
-2. **Phase 2 (Study)**: Scheduled revisiting of materials from Phase 1
+- **SRS System**: Any spaced repetition system used to review and retain language elements
+  - Example: WaniKani, Anki, BunPro
 
-This creates a virtuous cycle where immersion provides context and interest, while study activities deepen understanding of previously encountered content.
+- **Queue**: An ordered list of items planned for future activities
+  - Example: Grammar points to study, vocabulary to add to SRS
 
-#### Implementation in Weekly Planning // all weekly planning material should be in that one section?
+#### 1.2.2 Expanded Terminology Framework
 
-During the Sunday Planning Process (see below):
-1. Review recently covered immersion material for suitable study activities
-2. Schedule specific study activities based on materials
-3. Leave immersion activities flexible
+##### Activity Classification
+- **Focus Activity**: Primary Activity directly aligned with Capability Goals
+- **Foundation Activity**: Essential daily Activities maintaining progress during busy periods
+- **Support Activity**: Secondary Activity enhancing other activities
+- **Assessment Activity**: Activity designed to evaluate progress
 
-// I believe this material is duplicative with a few other areas:
-// - the Acitivty workflow tables that specify each activity step-by-step with LLM integration.
-// - progress target tables
-// Anything that isn't duplicated elsewhere still needs to be extracted and turned into tables in the stable memory category, e.g. cultural acquisition, and in their place, instructions for how to interpret those tables. Cultural acquisition, in particular, is more of an over-arching guideline than a specific process.
-### Skill-Specific Strategies
+##### Activity Components
+- **Objective**: Specific learning goal of the Activity
+- **Specific Steps**: Concrete actions to complete a particular Activity instance
+- **Resources**: Materials and tools required for an Activity
+- **Outcome Measures**: Metrics used to evaluate Activity success
 
-These strategies relate to the Activity Catalog found in the volatile memory tables.
+##### Process Terminology
 
-#### Listening Comprehension Study
-- **Multiple-pass approach**:
-  1. First listen: Uninterrupted, focus on gist
-  2. Second listen: Close analysis with rewinding, vocabulary identification
-  3. Third listen: Comprehension with newly learned vocabulary
-- **Selection process**: Identify 3-5 high-utility words to add to SRS
+###### Structural Elements
+- **System**: The overall learning framework and principles.
+  - Relationship: Contains all other elements
 
-#### Reading Comprehension Study
-- **Dual approach**:
-  - **Immersion Mode**: Prioritize flow and natural engagement with limited lookups
-  - **Study Mode**: Methodical analysis of previously experienced content
-- **Progression**: Graded readers → manga → simple articles → regular content
 
-#### Writing Development
-- **Scaffolded approach**: 
-  1. Sentence completion
-  2. Question & answer format
-  3. Simple translations
-  4. Independent composition
-- **Progression**: Sentence → Paragraph → Multi-paragraph → Extended composition
+#### Planning Terminology
 
-#### Speaking Foundation
-- **Phonetics-first approach**: Master sound system before extensive production
-- **Progression**: Phonetic drills → Shadowing → Controlled production → Free speaking
+##### Time Frames
+- **Planning Cycle**: The recurring time unit for organizing Activities (weekly).
 
-#### Grammar Expansion
-- **Backfilling Approach**: Begin grammar expansion by revisiting already-studied N5 material
-- **Rationale**: Build production skills with familiar grammar before advancing to new points
-- **Progression**: N5 backfill → N4 reinforcement → N4 expansion → N3 introduction
-- **Success Criteria**: Comfortable production of at least 90% of N5 grammar points before focusing primarily on N4 expansion
-- **Data source**: Refer to “Grammar expansion queue” and “Grammar expansion log” in long-term memory of volatile memory data.
+- **Session**: A single continuous period of learning Activity.
 
-### Cultural Acquisition
-- **Content Selection**: Authentic materials highlighting cultural contexts
-- **Observation Focus**: Communication patterns, social hierarchies, contextual language
-- **Media Types**:
-  - Slice-of-life anime/manga for daily interactions
-  - Documentary content for traditional aspects
-  - YouTube vlogs for contemporary life
-  - News sources for formal language
-  - Variety shows for cultural references
+##### Organization Elements
+- **Priority Tier**: A priority classification level for Activities.
 
-// Now that we're adding a dedicated logging and workflow tables for the different activities, clear instruction for how to leverage those tables to assist a user in their activities would be appropriate.
-## 4. Progress Tracking
+- **Skill Area**: A grouping of related Activities by language competency.
+  - Same as Core Skill Area
 
-// I think reporting instructions are better located in the "LLM Role" columns of the workflow tables.
-### SRS Session Reporting
-- **Frequency**: After each significant session
-- **Analysis Metrics**: Duration per item, accuracy trends, time of day impact
+- **Learning Domain**: Broader classification of knowledge areas.
+  - Example: Grammar, Vocabulary, Cultural Context
 
-// Both vocab mining and Problem resolution are their own activities and their workflows should be individually documented, the same as other activities, however, they are not stand-alone workflows, rather, they occur when they are required by the other workflows. So we need a new way of describing that here and in memory tables.
-### Vocabulary Mining
-- **Process**: Log all vocabulary looked up during comprehension activities
-- **Selection**: Mark 3-5 key words from each activity based on utility and frequency
-- **Revisit Strategy**: Re-encounter same content in 7-10 days to test retention
+### 1.3 Learning Modalities
+- **Input**
+  - Immersion activities (flexible)
+  - Intensive study activities (scheduled)
+  - Key focus: Comprehension development
 
-### Problem Resolution Protocol
-- **Resolution Process**:
-  1. New issue → Card template + Revisit Queue
-  2. 90%+ Anki accuracy → Quiz scheduled
-  3. 3 successful quizzes → Production challenge
-  4. 5 successful productions → Mark resolved
+- **Knowledge**
+  - Grammar expansion
+  - Vocabulary/Kanji acquisition
+  - Phonetics/Pitch accent study
+  - Key focus: System understanding
 
-### Progress Evaluation Framework
+- **Output**
+  - Writing practice
+  - Speaking practice
+  - Key focus: Production skills
 
-#### Sunday Planning Process
+## 2. Operational Framework
 
-#####  Process Notes
+### 2.1 Learning Flow Model
 
-- **Planning Timeframe**: Plan from current day through Sunday only. Generally this is Sunday -> Sunday, but not always. Memory initialization might be accompanied by active planner data from an in-progress week, including sundays.
-- **Table Status Values**: FALSE values in templates are placeholders for completion data in the tables they instantiate. All values are FALSE until activity is completed. TRUE/FALSE values in the volatile memory tables represent actual completion.
-- **Process Flow - IMPORTANT**: Planning occurs in sequential stages, with approval at each stage before proceeding:
-- Each planning stage MUST be completed and explicitly approved before proceeding to the next
-- Present only ONE stage at a time, then WAIT for explicit user approval
-- If not approved, revise the current stage based on feedback before proceeding
-- Planning sequence:
-  1. Review & Reflection (approval)
-  2. Schedule Integration (approval)
-  3. Resource-Activity Matching (approval)
-  4. SRS Adjustment (approval)
-  5. Weekly Planning Tables Generation (final approval)
+#### 2.1.1 Core Framework
+- **Goal-Driven Structure**: All learning efforts directed toward capability and aspiration goals
+- **Dual-Mode Engagement**: All language content is engaged through two complementary modes:
+  - **Study Mode**: Deliberate, structured interaction with language elements for conscious acquisition
+  - **Immersion Mode**: Natural, contextual exposure to language for unconscious acquisition and reinforcement
 
-##### 1. Review & Reflection (15 minutes)
-- **SRS Metrics Analysis**:
-  - Review past week's accuracy rates and time spent
-  - Identify any patterns in errors or challenges
-  - Assess whether time targets were met consistently
-- **Activity Completion**:
-  - Check off completed activities from previous week
-  - Note any consistently missed activities
-  - Celebrate successful completions
 
-##### 2. Schedule Integration (10 minutes)
-- **Calendar Review**:
-  - Identify days with limited availability in coming week
-  - Note optimal time windows each day (morning/evening)
-  - Mark any special circumstances (travel, deadlines, etc.)
-- **Activity Allocation**:
-  - Assign focus activities to specific days based on availability
-  - Fill in the "Planned Day" column in Weekly Activity template
-  - Ensure highest priority activities get optimal time slots
+#### 2.1.2 Core Pathways
+The learning system operates through three fundamental pathways that reflect how language acquisition naturally occurs:
+##### Systematic Study → Recognition (Top-Down Path)
+This pathway begins with deliberate study of language components and builds toward recognition in authentic contexts.
+- Study grammar patterns → Recognize them in natural input
+- Learn vocabulary → Identify words in authentic contexts
+- Study pronunciation rules → Recognize nuances in native speech
+- Documentation: Occasional notation of recognition moments in activity logs
 
-##### 3. Resource-Activity Matching (10 minutes)
-- **Current Progress Assessment**:
-  - Review where you are in each resource (episode numbers, chapters, etc.)
-  - Consider what would provide appropriate challenge level
-- **Resource Assignment**:
-  - Match resources to each planned activity
-  - Fill in the "Resource" column in Weekly Activity template
-  - Ensure variety across the week
-- **Resource Validation**:
-  - Confirm all needed resources are accessible
-  - Download any materials needed for offline study
-  - Check subscription status if relevant
+##### Natural Input → Resource Building (Bottom-Up Path)
+This pathway begins with exposure to authentic language and extracts patterns for systematic reinforcement.
+- Revisit material first encountere in immersion → Extract unfamiliar material for study
+- Notice recurring vocabulary → Add to SRS system
+- Observe natural speech patterns → Create shadowing materials
+- Documentation: Mined patterns to evaluate for SRS system incorporation
 
-##### 4. SRS Adjustment (5 minutes)
-- **Based on Time-Target Analysis**:
-  - If consistently under time targets: Plan to add more items
-  - If consistently over time targets: Reduce new items
-  - If accuracy declining: Maintain or reduce regardless of time
-- **Set Specific Addition Rates**:
-  - WaniKani: ___ new items this week
-  - BunPro Grammar: ___ new points this week
-  - BunPro Vocabulary: ___ new words this week
+##### Knowledge → Production (Application Path)
+This pathway transforms passive knowledge into active language use through graduated challenges.
+- Understand grammar → Apply in controlled exercises → Use in spontaneous communication
+- Recognize vocabulary → Retrieve words in exercises → Employ in original sentences
+- Comprehend audio → Shadow recordings → Participate in conversations
 
-##### 5. Prepare Materials (5-10 minutes)
-- **Content Queue**:
-  - Pre-select episodes or chapters for immersion activities
-  - Bookmark relevant grammar points for expansion focus
-  - Prepare writing prompts if needed
-- **Environment Setup**:
-  - Ensure study apps are updated
-  - Download offline content
-  - Set up any needed reminders or calendar notifications
+#### 2.1.3 Activity Categories
+- **Natural Input Activities**: Authentic language exposure
+- **Knowledge Building Activities**: Develop systematic understanding of language components and patterns.
+- **Production Activities**: Active language use practice
+- Many activities naturally fulfill more than one cateogry
 
-##### 6. Generate Weekly Planning Tables (5 minutes) 
-- **Weekly Planner Table Template**:
+#### 2.1.4 Progression Framework
+Learning advances through structured progression on three levels:
+1. **Within Activities**: Internal progression mechanisms
+2. **Between Activities**: Sequencing of related activities
+3. **Across Skill Areas**: Balanced advancement across linguistic domains
+
+#### 2.1.5 Activity-Resource-Goal Interconnection
+Activities serve as the operational unit of the learning program with three key mappings:
+
+1. **Goal Support**: Each activity explicitly supports specific capability goals
+2. **Resource Requirements**: Activities require specific resource categories for implementation
+
+### 2.2 Planning Framework
+
+#### 2.2.1 Core Planning Concepts
+- **Priority Tiers**: Ranked categorization system for activities
+  - Tier assignment based on:
+    - Direct alignment with priority goals
+    - Enabling function for other high-value activities  
+    - Current proficiency gaps
+    - Resource availability
+
+- **Planning Cycle**: Recurring time-bound framework (weekly, with daily sub-cycles)
+  - Each planning cycle includes:
+    - Activity selection, prerequisite completion, and scheduling
+    - Balance assessment across skill areas
+    - Progress evaluation against goals
+    - Adjustment based on previous cycle outcomes
+
+## 3. System Architecture
+
+### 3.1 Memory System Architecture
+
+#### 3.1.1 Static Memory (System Document)
+- **Purpose**: Defines core system architecture, processes, and principles
+- **Components**:
+  - Learning methodology
+  - Memory architecture
+  - Terminology Framework:
+    - Core Terminology (foundational concepts)
+    - Expanded Terminology (operational classifications)
+- **LLM Usage**: Reference as foundational guidance that overrides conflicting information
+
+#### 3.1.2 Table Naming Conventions
+
+Tables in the memory system follow a specific naming pattern when exported from Apple Numbers:
+
+- Tables appear in the format "TabName-TableName" where:
+  - "TabName" corresponds to the spreadsheet tab that contains the table
+  - "TableName" is the actual name of the table within that tab
+
+This hyphenated format is an export artifact and not part of the logical data structure. When referencing tables:
+
+- Table references in the system should use just the TableName without the tab prefix
+- A single tab may contain multiple related tables (e.g., "Activities" tab might contain "Activity Catalog" and "Activity Log" tables)
+
+The LLM coach should always interpret the first segment before the hyphen as the organizational category (spreadsheet tab) and the second segment as the actual table name being referenced.
+
+#### 3.1.3 Memory Tables Categories
+
+#### 3.1.3.1 Stable Memory
+- **Purpose**: Contains seldom or slowly changing data such as learner profile, strategies, activites, resources, and others.
+- **Table categories**:
+  - Learner Profile: facts about the learner
+  - Strategy & Goals: high-level approaches
+  - Activities
+  - Resources
+  - Targets
+  - System: meta-data about this system
+
+#### 3.1.3.2 Volatile Memory
+- **Purpose**: Tracks ongoing activities and immediate learning state
+- **Table Categories**:
+  - Planner: the weekly plan for the learner's convenience
+  - Logs: Records of study activities
+  - Lists & Queues: used to track inputs and byproducts of various activities
+
+### 3.1.4 Memory Transfer Temporal Context
+
+#### 3.1.4.1 Initialization Context Types
+The memory transfer system must handle three distinct initialization scenarios:
+
+1. **Mid-Week Initialization (With Existing Plan)**
+   - Occurs on any day Monday through Saturday
+   - Contains a "Weekly Planner <current week>" table with partially completed current week data
+   - Continues in-progress week
+
+2. **Mid-Week Initialization (Without Existing Plan)**
+   - Occurs on any day Monday through Saturday
+   - Does not contain a "Weekly Planner <current week>" table, but may contain planners from previous weeks.
+   - Requires "catch-up planning" from current day through Sunday
+
+3. **Sunday Initialization**
+   - Occurs specifically on planning day (Sunday)
+   - Contains completed previous week data
+   - Requires setup of entirely new week
+
+#### 3.1.4.2 Weekly Table Interpretation Guidelines
+
+**For Mid-Week Initialization (With Existing Plan):**
+- TRUE values in current week tables = Completed activities
+- FALSE values in current week tables = Planned but not yet completed
+- No new planning required
+
+**For Mid-Week Initialization (Without Existing Plan):**
+- Previous week tables show completion status for analysis
+- System should prompt for catch-up planning (current day → Sunday)
+- Generate new tables with condensed planning process
+
+**For Sunday Initialization:**
+- Previous week tables show completion status for analysis
+- System should prompt for planning cycle for upcoming week
+
+### 3.2 Resource Framework
+
+#### 3.2.1 Core Resource Categories
+- **SRS Systems**: Spaced repetition tools for retention
+- **Grammar Resources**: Structural explanation and practice
+- **Comprehension Resources**: Reading and listening materials
+- **Production Resources**: Speaking and writing practice platforms
+- **Phonetics Resources**: Pronunciation and pitch accent training
+- **Reference Materials**: Dictionaries and lookup tools
+
+#### 3.2.2 Resource Selection Guidelines
+1. **Authenticity Principle**: Prefer authentic materials when level-appropriate
+2. **Cultural Integration**: Value materials that naturally incorporate cultural context
+3. **Resource Integration Principles**: A single resource may fulfill multiple roles
+
+#### 3.2.3 Resource Documentation
+- **Resource Catalog**
+  - Comprehensive list of all resources the learner uses
+  - Documents resource attributes:
+    - Resource type
+    - Description
+    - Sate of progress through resource
+    - Time, focus, and context requirements
+  - **Activity Suitability**: Lists specific activities each resource supports
+
+#### 3.2.4 Resource Tracking
+- **Resource Usage Logs**: Track engagement with each resource
+- **Resource State Information**: Current position in progressive resources
+
+## 4. Implementation Guidelines
+
+### 4.1 Weekly Planning Process
+
+#### 4.1.1 Process Overview
+- **Planning Timeframe**: Plan from current day through Sunday. Generally Sunday→Sunday, but memory initialization might include an in-progress week.
+- **Table Status Values**: FALSE values in templates are placeholders until activity completion. TRUE/FALSE in volatile memory tables represent actual completion.
+
+#### 4.1.2 Sequential Planning Stages
+Each stage must be completed and explicitly approved before proceeding to the next:
+
+1. **Review & Reflection**
+   - **SRS Metrics Analysis**:
+     - Review past week's accuracy rates and time spent
+     - Identify patterns in errors or challenges
+     - Assess whether time targets were met consistently
+   - **Activity Completion**:
+     - Summarize completed activities from previous week
+     - Note any missed activities for upcoming planning
+     - Celebrate successful completions
+
+2. **Schedule Integration**
+   - **Calendar Review**:
+     - Identify days with limited availability
+     - Note optimal time windows each day
+     - Mark special circumstances (travel, deadlines, etc.)
+   - **Activity Allocation**:
+     - Pick activities to perform
+     - Assign focus activities to specific days based on availability
+     - Fill in "Planned Day" column in Weekly Activity template
+     - Ensure highest priority activities get optimal time slots
+      - Consider skipped activities from previous week
+
+3. **Resource-Activity Matching**
+   - **Current Progress Assessment**:
+     - Review current position in each resource
+   - **Resource Assignment**:
+     - Match resources to each planned activity
+     - Prepare writing prompts if needed
+     - Review any queues and lists that are relevent to planned activities
+   - **Resource Validation**:
+     - Confirm all needed resources are accessible
+     - Download materials needed for offline study
+
+4. **SRS Adjustment**
+   - **Based on Time-Target Analysis**:
+     - If under time targets: Plan to add more items
+     - If over time targets: Reduce new items
+     - If accuracy declining: Maintain or reduce regardless of time
+   - **Set Specific Addition Rates**:
+     - WaniKani: ___ new items this week
+     - BunPro Grammar: ___ new points this week
+     - BunPro Vocabulary: ___ new words this week
+
+5. **Generate Weekly Planning Tables**
+   - Complete Weekly Planner Table with specific focus activity
+   - Fill in Activity Checklist with details from previous steps
+   - Add specific context notes to day headers as needed
+   - Output CSV for Weekly Planner and Activity Checklist
+
+#### 4.1.3 Planning Templates
+
+##### Weekly Planner Table Template
 ```
 ,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
 WaniKani,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
@@ -260,79 +382,255 @@ BunPro,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 Emurse,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 Anki,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
 Focus,,,,,,,
-Flexible,,,,,,,
 ```
-  - Fill in the Focus row with primary activities for each day, including resource details established in step 3.
-  - Fill in the Flexible row with secondary/optional activities
-  - Add specific context notes (WFH, etc.) to day headers as needed
-
-- **Activity Checklist Template**:
+##### Activity Checklist Template
 ```
-Priority,Activity,Default Day,Planned Day,Resource,Status,Notes
-1,Grammar Expansion,Monday,,,FALSE,
-2,Shadowing,Tuesday,,,FALSE,
-3,Writing Practice,Wednesday,,,FALSE,
-4,Listening Study,Thursday,,,FALSE,
-5,Shadowing,Friday,,,FALSE,
-6,Reading (Immersion),Flexible,,,FALSE,
-7,Reading (Study),Flexible,,,FALSE,
-8,Immersive Viewing,Saturday,,,FALSE,
+Priority,Activity,Planned Day,Resource,Status,Notes
+,,,,FALSE,
 ```
-  - Complete the "Planned Day" column based on your schedule
-  - Fill in the "Resource" column with specific materials
-  - Add detailed notes for each activity
 
-#### Quarterly Check (30-minute self-assessment):
-- Comprehension improvements
-- Kanji recognition progress
-- Listening development
-- Expression capability
+#### 4.1.4 Context-Aware Planning Variations
 
-// this section should probably be removed and its content reconciled with and incorporate into the general intstructions for how to interact with the user and how to use the memory tables.
-## Activity Documentation Framework
+**For Sunday Planning:**
+- Perform complete planning routine
 
-### Core Structure
-- **Activity catalog**: Master registry of all learning activities
-- **Activity workflows**: Step-by-step process documentation for each activity
-- **Activity logs**: Specific metrics collection for each activity type
+**For Mid-Week Planning (Without Existing Plan):**
+- As with standard Sunday planning, only starting from current day.
 
-### Documentation Standards
-- Human-readable naming conventions
-- Consistent formatting for easy reference
-- Detailed workflow steps with time allocations
-- Activity-specific metrics tailored to learning goals
+**For Mid-Week Planning (With Existing Plan):**
+- Review completion status of current week up to initialization date
+- No planning required
 
-### Implementation Guidelines
-1. Create base Activity catalog with all current activities
-2. Develop individual workflow tables for each activity
-3. Design appropriate logging schema for each activity type
-4. Maintain consistency in field naming across related tables
+## 5. Future Elaborations
 
-// can these be removed? after all, the memory tables themselves should be sufficient example?
-### Example tables:
+This section documents planned improvements to the learning system that have been identified but not yet implemented. These items should be considered during periodic system reviews.
 
-#### Activity catalog
+### 5.1 Analytics Enhancements
 
-ID,Name,Priority,Description,Goal_Focus,Time,Focus,Context
-1,Grammar expansion,1,Study and practice using specific grammar points with focus on production,Grammar Production,30min,High,Distraction-free
-2,Basic shadowing,1,Repeat immediately after native speaker with focus on rhythm,Pronunciation,15min,Medium,Quiet environment
+#### 5.1.1 Long-Term Metrics Tracking
+- Develop quarterly aggregation of weekly performance data
+- Implement visualization formats for trend identification
+- Create progress metrics against long-term fluency goals
+- Integrate interval-based retention scoring across SRS systems
 
-#### Grammar expansion workflow
-Step,Name,Description,Time,LLM_Role
-1,Selection,Choose grammar point from expansion queue,5min,Confirm selection based on progression
-2,Comprehension,Review explanation and examples in BunPro,5min,None
-3,Analysis,Identify usage patterns and contexts,5min,Provide additional examples if needed
-4,Production,Create 3-5 original sentences using the pattern,10min,Review for accuracy
-5,Integration,Connect to previously learned points,5min,Suggest combinations
+#### 5.1.2 Adaptive Goal Setting
+- Algorithm for adjusting daily SRS targets based on performance history
+- Milestone tracking against JLPT and other external benchmarks
+- Integration of speaking/listening balance metrics
 
-#### Grammar expansion log
-Date,Point,JLPT_Level,Examples_Created,Confidence,Time_Spent,Error_Types,Notes
-2025-03-24,～たことがある,N5,4,3.5,28,Tense confusion,"Still confusing with present perfect usage"
+### 5.2 System Evolution
+
+#### 5.2.1 Periodic Review Protocol
+- Establish quarterly system evaluation process
+- Define criteria for planning process adjustments
+- Document historical changes to the system
+
+#### 5.2.2 Resource Lifecycle Management
+- Track resource effectiveness ratings over time
+- Protocol for retiring versus recycling learning materials
+- Integration of spaced repetition principles into resource selection
+
+#### 5.2.3 Subordinate LLMs
+- Use specialized subordinate LLMs like function calls to assist with specific activites.
+- Specialized prompts and input definition
+- Specified output schema for reporting back to main coach LLM
+- Minimize context window usage of main coach LLM
+
+### 5.3 Advanced Planning Features
+
+#### 5.3.1 Specialized Learning Modes
+- Intensive preparation modes for tests/travel
+- Recovery protocols after extended breaks
+- Simplified maintenance mode for busy periods
+
+#### 5.3.2 Multi-Modal Integration
+- Balance between reading, listening, speaking, writing
+- Output practice scheduling patterns
+- Immersion activity tracking
+
+6. ## Core Learning System Principles
+
+**Self-Directed Assessment**: 
+
+IMPLEMENTATION DIRECTIVE: Resist the urge to over-quantify progress metrics. When designing capability indicators, activity completion conditions, or assessment mechanisms:
+
+- DEFAULT TO SIMPLICITY: Use general descriptions that a learner can intuitively evaluate
+- AVOID numerical thresholds, percentage targets, or complex scoring rubrics unless specifically requested
+- PRIORITIZE the learner's felt experience of improvement over external validation
+- REMEMBER that administrative overhead directly reduces available learning time
+
+The system assumes a motivated, autonomous individual capable of meaningful self-assessment. The coach's role is to guide reflection, not to impose evaluation frameworks.
 
 
 Volatile memory csv tables:
 
-Activities-Error correction activities
+Planner-Weekly planner 03-16-25
+,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+WaniKani,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
+BunPro,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE
+Emurse,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
+Anki,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE
+Focus,Grammar Expansion (BunPro - N5 review),Writing Practice (Sentence completion exercises),Listening Study (色々な日本語 Ep.21),Shadowing (Nihongo con Teppei #680),Immersive Viewing (色々な日本語 - new episode),Reading Study (よつばと! Vol.2)
+Flexible,,,,,Reading Immersion (よつばと! Vol.2),
+
+Lists & Queues-Vocabulary Mining List
+Word,Added to SRS,品詞,Source,Episode,Date
+モジャモジャ,FALSE,擬態語,NcT,680,2025-03-20
+ひげ,TRUE,名詞,NcT,680,2025-03-20
+ボサボサ,FALSE,擬態語,NcT,680,2025-03-20
+ととのえ,FALSE,名詞/動詞,NcT,680,2025-03-20
+ほくほく,FALSE,擬態語,NcT,680,2025-03-20
+焼き芋,FALSE,名詞,NcT,680,2025-03-20
+ふゆ,TRUE,名詞,NcT,680,2025-03-20
+さつまいも,FALSE,名詞,NcT,680,2025-03-20
+あき,TRUE,名詞,NcT,680,2025-03-20
+なべ,TRUE,名詞,NcT,680,2025-03-20
+ポカン,TRUE,擬態語,NcT,680,2025-03-20
+ぎたいご,FALSE,名詞,NcT,680,2025-03-20
+ぎおんご,FALSE,名詞,NcT,680,2025-03-20
+とにかく,FALSE,副詞,NcT,680,2025-03-20
+ふくしゅう,FALSE,名詞/する動詞,Writing practice,2025-03-20,2025-03-20
+持ち帰り,FALSE,名詞/する動詞,Writing practice,2025-03-20,2025-03-20
+食べ残し,TRUE,名詞,Writing practice,2025-03-20,2025-03-20
+食い残し,FALSE,名詞,Writing practice,2025-03-20,2025-03-20
+辞書形,FALSE,名詞,Writing practice,2025-03-20,2025-03-20
+おもちゃ,TRUE,名詞,Mochi Real Japanese,"Mar 24, 2025","Mar 28, 2025"
+
+Legacy-Activities-Resource libaray
+Resource Name,Type,Compatible Activities,Status,Relative comprehension level,Notes
+WaniKani,SRS,Core SRS,Active,N/A,Level 23/60 Lifetime subscription
+BunPro,SRS,"Core SRS, ACT-01",Active,N/A,"N5(110/126), N4(74/177), Lifetime"
+Emurse,SRS,"Core SRS, ACT-03",Active,N/A,Dōgen course integration $50/yr
+Nihongo con Teppei,Podcast,"ACT-02, ACT-05, ACT-06",Active,+ 25%,Episodes 670-685 downloaded
+よつばと!,Manga,"ACT-07, ACT-08",Active,+ 35%,"Volumes 1-2 physical, BunPro deck available"
+色々な日本語,YouTube,"ACT-05, ACT-09",Active,On-level,$3/mo subscription
+Speak Japanese Naturally,YouTube,"ACT-02, ACT-03, ACT-05",Available,Unknown,Not currently in regular rotation
+Anki,SRS,Problem correction,Active,N/A,Problem correction system only
+Todaii Reader,News App,"ACT-07, ACT-08",Available,Varies,Not currently in regular rotation
+
+Learner Profile-Core Profile
+Aspect,Current State,Notes
+Study Duration,2 years,Started ~2023
+Learning Approach,Self-directed SRS-focused,Prefers tracking effort over progress
+Study Time,1-3 hours daily,Variable based on schedule
+Core SRS,WaniKani (L23/60) + BunPro (N5 complete N4 90%),Lifetime subscriptions for both
+Pronunciation Study,Beginning pitch accent work,Recently started
+Current Focus,Phonetics foundation and writing practice,Preparation for speaking
+
+Planner-Activity checklist 03-23-25
+Priority,Activity,Default Day,Planned Day,Resource,Status,Notes
+1,Grammar Expansion,Monday,Tuesday,BunPro - N5 review,FALSE,Preparation for たことがある on 3/24
+2,Shadowing,Tuesday,Friday,Nihongo con Teppei #680,FALSE,Using familiar content for better focus
+3,Writing Practice,Wednesday,Wednesday,Sentence completion exercises,FALSE,Focus on N5 grammar structures
+4,Listening Study,Thursday,Thursday,色々な日本語 Ep.21,FALSE,Complete unfinished episode
+5,Shadowing,Friday,N/A,N/A,FALSE,Already scheduled for this week
+6,Reading (Immersion),Flexible,Saturday,よつばと! Vol.2,FALSE,Optional flexible activity
+7,Reading (Study),Flexible,Sunday,よつばと! Vol.2,FALSE,Analyze grammar patterns and vocabulary
+8,Immersive Viewing,Saturday,Saturday,色々な日本語 (new episode),FALSE,Focus on cultural elements
+
+Legacy-Activities-Listening (Study) workflow
+Step,Name,Description,Time,LLM Role
+1,Preparation,Select content and prepare environment,5 min,Resource recommendation based on current level
+2,First Pass,Listen without pausing for general understanding,Media Duration,N/A (independent activity)
+3,Second Pass,Selective pausing to identify vocabulary gaps,1.5x Media Duration,N/A (independent activity)
+4,Vocabulary Processing,Look up and document new vocabulary,10-15 min,Assist with definitions and 品詞 classification
+5,Third Pass,Confirm understanding with new vocabulary,Media Duration,N/A (independent activity)
+6,Documentation,"Submit logs, vocab, and select SRS additions",5 min,Analyze comprehension patterns over time and resource level fit
+7,SRS Integration,Add selected vocabulary to learning systems,5 min,Suggest optimal SRS distribution strategy
+
+Lists & Queues-Problem List
+Problem Category,Specific Issue,Example,Date Identified,Resolution Phase,Last Review Date,Accuracy Rate,Attempts
+Grammar,Missing こと in nominalization,Often forgotten in things like phrase+に気がつく,2025-03-10,,2025-03-17,,
+Grammar,Passive-causative combinations,Complex sentences with させられる forms,2025-03-18,,,,
+Grammar,Processing unexpected word order,Patterns like 指の長い (fingers-long),2025-03-18,,,,
+Grammar,[verb]-ようにする vs [verb-おう]-よう distinction,Consistent confusion between patterns,2025-03-19,,,,
+Grammar,Adding の after verb in [verb] + ように pattern,Used 食べるのように instead of 食べるように,2025-03-19,,,,
+Grammar,Missing のが in をする のが へたです pattern,,2025-03-19,,,,
+Honorifics,Unnecessary お+verb used in verb[て]+いただけませんか pattern,,2025-03-15,,2025-03-16,,
+Particles,Confusion between に and で,,2025-03-05,,2025-03-15,,
+Particles,Determining when の is needed in compound nouns,"直接複合 vs の-複合 (e.g., 車椅子 vs 車の色)",2025-03-18,,,,
+Particles,Direct object marking (は vs を),寿司は食べたことがあります,2025-03-18,,,,
+Particles,Missing を with action noun + する,サーフィングしたことがない,2025-03-18,,,,
+Particles,Complex noun relationships in longer sentences,先生のエルエルエムと vs エルエルエムの先生と,2025-03-18,,,,
+Spelling,Extra う in えんりょ,えんりょう (incorrect),2025-03-15,,-,,
+Spelling,ボランティア misspelling,,2025-03-19,,,,
+Verb conjugation,Forgetting 帰る is godan verb,,2025-03-19,,,,
+Verb conjugation,Irregular くる→ こい command form,,2025-03-19,,,,
+Vocabulary,Confusion between 幸福 vs 幸運,Frequent errors in WK,2025-02-28,,2025-03-14,,
+Vocabulary,Confusion between この頃 vs この間,,2025-03-17,,,,
+Vocabulary,Confusion between さっそく vs さっさと,"すぐに vs 急いで (e.g., さっそく始めましょう vs さっさと終わらせて)",2025-03-18,,,,
+Vocabulary,Confusion between 昨今 and 昨日,,2025-03-19,,,,
+
+Activities-Activity catalog legend
+Category,Emoji,Name,Description
+Time,⏰,Very Short,<15 minutes; quick activities completed in brief moments
+Time,⏱️,Medium,15-30 minutes; standard activity timeframe
+Time,⏱️⏱️,Long,30-60 minutes; extended activities
+Time,⏱️⏱️⏱️,Very Long,>60 minutes; comprehensive deep engagement
+Focus,🧠,Full Focus,Requires complete concentration and distraction-free environment
+Focus,👁️,High Focus,Requires significant attention but can handle minor interruptions
+Focus,👂,Medium Focus,"Can be done during light activities (walking, commuting)"
+Focus,🎧,Low Focus,Can be done as background activity with divided attention
+Context,📴,Offline Only,Activity can be done completely offline
+Context,🔌,Online Required,Activity requires internet connection
+Context,📱,Flexible,Activity works in both online/offline contexts
+Context,🏠,Location-specific,Activity requires specific location/environment
+
+Logs-Listening immersion log
+Date,Start Time,Total Duration (min),Resource,Episode,Media Length,Comprehension rating,Notes
+3/14/25,,40,Nihongo Con Teppei,680,04:00,,"Covered topics: hair styles, seasonal food, and onomatopoeia"
+3/15/25,,16,色々な日本語,21: よつばと！,26:54,,"Incomplete session, continued on 2025-03-20"
+3/20/25,,10:54,色々な日本語,21: よつばと！,26:54,,Finished on train. Very understandable
+
+Legacy-Activities-Priority tiers
+Tier,Description,WeeklyTarget,Notes
+1,Must-complete core skills development,Complete all weekly,Critical for addressing primary challenges
+2,Critical reinforcement activities,Complete 2-3 weekly,Supports integration of learned material
+3,Flexible enrichment,As time allows,Builds automaticity and enjoyment
+
+Logs-Writing practice log
+Date,Start Time,Duration,Sentences,Topic,Assigned items,Reference checks,Grade,Notes
+3/20/25,,10,4,,"ようにする,volitional,この頃 vs この間",0,,All sentences grammatically correct.
+3/12/25,20:31,15,2,,,,,
+3/12/25,11:19,25,2,,,,,
+
+Legacy-Activities-Grammar expansion workflow
+Step,Name,Description,Time,LLM Role
+1,Selection,Choose grammar point from expansion queue based on progression targets,5min,Confirm selection is appropriate for level
+2,Comprehension,Review explanation and examples in BunPro or other resources,5min,None
+3,Analysis,Identify usage patterns and contexts; note similar structures,5min,Provide additional contextual examples
+4,Production,Create 3-5 original sentences using the target pattern,10min,Review for accuracy and naturalness
+5,Integration,Connect to previously learned points; identify combinations,5min,Suggest useful grammar combinations
+
+Learner Profile-Availability
+Time Slot,Duration,Focus Level,Context,Special Considerations
+Early Morning,30-60 min,🧠 Full Focus,🏠 Home,"Optimal learning conditions, but morning routine is inconsistent"
+Commute (to work),30-45 min,👂 Medium Focus,📱 Flexible,Subway with variable connectivity
+Lunch Break,15 min max,👁️ High Focus,📱 Flexible,Risk of over-extension to work time
+Commute (from work),30-45 min,👂 Medium Focus,📱 Flexible,Often tired from workday
+Evening,30-90 min,🧠/👁️ Full/High Focus,🏠 Home,Variable availability due to social commitments
+Bedtime,15 min,🎧 Low Focus,🏠 Home,Passive listening only
+Total Study Target min,15m,,,
+Total Study Target max,1h 30m,,,
+
+Lists & Queues-Question List
+Question,Category,Date Asked,Research Notes
+"Why is ""私のこと"" used instead of 私？",Grammar,2025-03-19,Sometimes こと is used to objectify oneself in certain expressions
+指の長い feels weird - why is word order reversed?,Grammar,2025-03-19,This is an adjectival clause pattern (attributive)
+How to determine which nouns compound vs requiring の?,Grammar,2025-03-19,Seems to depend on word origin and usage frequency
+What's the difference between さっそく and さっさと?,Vocabulary,2025-03-19,
+What's the difference between 葉 and 葉っぱ?,Vocabulary,2025-03-19,
+
+Legacy-Targets-Resource progression targets
+Resource,Current Status,Target,Timeline,Reassessment Point
+WaniKani,Level 23/60,Level 25,June 2025,Reassess addition rate at level 25
+WaniKani,Level 25/60,Level 30,September 2025,Reassess addition rate at level 30
+BunPro Grammar,"N5 (110/126), N4 (74/177)",Complete N4,June 2025,Review queue stability
+BunPro Grammar,N4 Complete,Begin N3,July 2025,Adjust based on review queue
+BunPro Vocabulary,Paused,Resume additions,When reviews <10/day,Add 5-10 items weekly
+Emurse/Dōgen,Beginning stages,Daily review routine established,April 2025,Optimize time allocation
+
+Legacy-Activities-Error correction activities
 Activity Type,Methodology,Primary Goals,Secondary Goals,Context Icons
 Targeted Error Correction,"• Select 3-5 persistent errors from tracking table
 • Create focused exercises addressing each
@@ -365,34 +663,14 @@ Error Pattern Analysis,"• Review SRS data for recurring error types
 • Strategy development (40%)","• Metacognitive skills
 • Learning efficiency",🧠 ⏱️⏱️ 🔌
 
-Long-term memory-Learning strategy state
-Area,Current Focus,Strategy Phase,Progress Metric,Advancement Criteria,Priority
-Grammar,N5 Backfilling,Foundation Reinforcement,"N5: 110/126 learned, 5/126 backfilled",When continued N5 practice feels redundant and you're confident in active usage,1
-Pronunciation,Phonetics Foundation,Pitch accent patterns,40% accuracy in Emurse,When basic patterns feel comfortable and intuitive,1
-Writing,Sentence Composition,Basic construction,3-5 sentences per session,When sentence writing flows naturally without significant pausing,2
-Kanji,WK Progression,Consistent additions,Level 23/60,Level 25 by June 2025 (adjustable based on comfort),2
-Reading,Graded Immersion,Building fluency,よつばと Volume 2 (44%),When reading becomes enjoyable rather than effortful,3
-Vocabulary,Thematic Organization,Network Building,Ad-hoc vocabulary recall,When vocabulary sets can be generated quickly by topic,2
+Learner Profile-Aspirational Goals
+Goal Type,Description,Timeline
+Cultural Fluency,Understand Japanese culture through native media and interaction,Long-term
+Travel Functionality,Basic conversational ability for Japan trip,Within 1 year
+Speech Quality,Develop native-like pronunciation and natural speech patterns,Long-term
+Media Comprehension,Enjoy anime/manga/films without translation support,Medium-term
 
-Goals-Resource progression targets
-Resource,Current Status,Target,Timeline,Reassessment Point
-WaniKani,Level 23/60,Level 25,June 2025,Reassess addition rate at level 25
-WaniKani,Level 25/60,Level 30,September 2025,Reassess addition rate at level 30
-BunPro Grammar,"N5 (110/126), N4 (74/177)",Complete N4,June 2025,Review queue stability
-BunPro Grammar,N4 Complete,Begin N3,July 2025,Adjust based on review queue
-BunPro Vocabulary,Paused,Resume additions,When reviews <10/day,Add 5-10 items weekly
-Emurse/Dōgen,Beginning stages,Daily review routine established,April 2025,Optimize time allocation
-
-Planner-Weekly planner 03-16-23
-,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
-WaniKani,TRUE,TRUE,TRUE,FALSE,FALSE,TRUE
-BunPro,TRUE,TRUE,TRUE,FALSE,TRUE,TRUE
-Emurse,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE
-Anki,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE
-Focus,Grammar Expansion (BunPro - N5 review),Writing Practice (Sentence completion exercises),Listening Study (色々な日本語 Ep.21),Shadowing (Nihongo con Teppei #680),Immersive Viewing (色々な日本語 - new episode),Reading Study (よつばと! Vol.2)
-Flexible,,,,,Reading Immersion (よつばと! Vol.2),
-
-Activities-Activity catalog legend
+Legacy-Activities-Activity catalog legend
 Category,Emoji,Name,Description
 Time,⏰,Very Short,<15 minutes; quick activities completed in brief moments
 Time,⏱️,Medium,15-30 minutes; standard activity timeframe
@@ -407,81 +685,9 @@ Context,🔌,Online Required,Activity requires internet connection
 Context,📱,Flexible,Activity works in both online/offline contexts
 Context,🏠,Location-specific,Activity requires specific location/environment
 
-Activities-Grammar expansion workflow
-Step,Name,Description,Time,LLM Role
-1,Selection,Choose grammar point from expansion queue based on progression targets,5min,Confirm selection is appropriate for level
-2,Comprehension,Review explanation and examples in BunPro or other resources,5min,None
-3,Analysis,Identify usage patterns and contexts; note similar structures,5min,Provide additional contextual examples
-4,Production,Create 3-5 original sentences using the target pattern,10min,Review for accuracy and naturalness
-5,Integration,Connect to previously learned points; identify combinations,5min,Suggest useful grammar combinations
-
-Logs-Listening immersion log
-Date,Start Time,Total Duration (min),Source,Episode,Media Length,Comprehension rating,Notes
-3/14/25,,40,Nihongo Con Teppei,680,04:00,,"Covered topics: hair styles, seasonal food, and onomatopoeia"
-3/15/25,,16,色々な日本語,21: よつばと！,26:54,,"Incomplete session, continued on 2025-03-20"
-3/20/25,,10:54,色々な日本語,21: よつばと！,26:54,,Finished on train. Very understandable
-
-Logs-Writing practice log
-Date,Start Time,Duration,Sentences,Characters,Grammar_Points,Vocabulary_Count,Error Categories,Self Correction Rate,Confidence Rating,Lookup Count,Notes
-2025-03-20,,10,4,88,"ようにする,volitional,この頃 vs この間",10,None,N/A,4.5,0,All sentences grammatically correct.
-3/12/25,20:31,15,2,,,,,,,,
-3/12/25,11:19,25,2,,,,,,,,
-
-Activities-Activity catalog
-Activity ID,Activity Type,Priority Tier,Description,Focus Area,Time,Focus,Context
-ACT-01,Grammar Expansion,1,Structured study and practice of specific grammar points with focus on production,Grammar Production,⏱️,🧠,📴
-ACT-02,Shadowing,1,Repeat immediately after native speaker focus on rhythm,Pronunciation,⏱️,🧠 📴,
-ACT-03,Shadowing (Advanced),1,Repeat with pitch accent focus record and analyze,Pitch Accent,⏱️,🧠 📴,
-ACT-04,Writing (Scaffolded),2,"Sentence completion, Q&A, and guided creation",Grammar Production,⏱️,🧠 📴,
-ACT-05,Listening (Immersion),2,First-pass listening for gist without interruption,Comprehension,⏱️,👂,📴
-ACT-06,Listening (Study),2,Multiple-pass detailed analysis with vocab mining,Vocabulary,⏱️⏱️,🧠,📴
-ACT-07,Reading (Immersion),2,Flow-focused reading with minimal lookups,Comprehension,⏱️/⏱️⏱️,👁️ 📴,
-ACT-08,Reading (Study),2,Intensive reading with analysis and mining,Vocabulary/Grammar,⏱️⏱️,🧠 📴,
-ACT-09,Immersive Viewing,3,Watching with Japanese subtitles 3-pass method,Cultural/Listening,⏱️⏱️,👁️ 📴,
-
-Item tracking-Problems
-Problem Category,Specific Issue,Example,Date Identified,Resolution Phase,Last Review Date,Accuracy Rate,Attempts
-Grammar,Missing こと in nominalization,Often forgotten in things like phrase+に気がつく,2025-03-10,,2025-03-17,,
-Grammar,Passive-causative combinations,Complex sentences with させられる forms,2025-03-18,,,,
-Grammar,Processing unexpected word order,Patterns like 指の長い (fingers-long),2025-03-18,,,,
-Grammar,[verb]-ようにする vs [verb-おう]-よう distinction,Consistent confusion between patterns,2025-03-19,,,,
-Grammar,Adding の after verb in [verb] + ように pattern,Used 食べるのように instead of 食べるように,2025-03-19,,,,
-Grammar,Missing のが in をする のが へたです pattern,,2025-03-19,,,,
-Honorifics,Unnecessary お+verb used in verb[て]+いただけませんか pattern,,2025-03-15,,2025-03-16,,
-Particles,Confusion between に and で,,2025-03-05,,2025-03-15,,
-Particles,Determining when の is needed in compound nouns,"直接複合 vs の-複合 (e.g., 車椅子 vs 車の色)",2025-03-18,,,,
-Particles,Direct object marking (は vs を),寿司は食べたことがあります,2025-03-18,,,,
-Particles,Missing を with action noun + する,サーフィングしたことがない,2025-03-18,,,,
-Particles,Complex noun relationships in longer sentences,先生のエルエルエムと vs エルエルエムの先生と,2025-03-18,,,,
-Spelling,Extra う in えんりょ,えんりょう (incorrect),2025-03-15,,-,,
-Spelling,ボランティア misspelling,,2025-03-19,,,,
-Verb conjugation,Forgetting 帰る is godan verb,,2025-03-19,,,,
-Verb conjugation,Irregular くる→ こい command form,,2025-03-19,,,,
-Vocabulary,Confusion between 幸福 vs 幸運,Frequent errors in WK,2025-02-28,,2025-03-14,,
-Vocabulary,Confusion between この頃 vs この間,,2025-03-17,,,,
-Vocabulary,Confusion between さっそく vs さっさと,"すぐに vs 急いで (e.g., さっそく始めましょう vs さっさと終わらせて)",2025-03-18,,,,
-Vocabulary,Confusion between 昨今 and 昨日,,2025-03-19,,,,
-
-Logs-Grammar expansion log
-Date,Grammar Point,JLPT Level,Duration (min),Examples Created,Challenges Noted,Success Rate,Confidence Rating,Next Review Date,Integration Points,Notes
-2025-03-18,～たことがある,N5,35,8,"Particle confusion with を vs は, especially with experience verbs",70%,3/5,2025-03-25,"～ことがない, 経験について話す",
-
-Activities-Listening (Immersion) workflow
-Step,Name,Description,Time,LLM Role
-1,Preparation,Select content and prepare environment,5 min,Resource recommendation based on current level
-2,Listen,Listen without pausing for general understanding,Media Duration,N/A (independent activity)
-4,Reflection,Consider anything that stood out,5 min,N/A (independent activity)
-6,Documentation,Submit logs,5 min,Analyze comprehension patterns over time and resource level fit
-
-Activities-Listening (Study) workflow
-Step,Name,Description,Time,LLM Role
-1,Preparation,Select content and prepare environment,5 min,Resource recommendation based on current level
-2,First Pass,Listen without pausing for general understanding,Media Duration,N/A (independent activity)
-3,Second Pass,Selective pausing to identify vocabulary gaps,1.5x Media Duration,N/A (independent activity)
-4,Vocabulary Processing,Look up and document new vocabulary,10-15 min,Assist with definitions and 品詞 classification
-5,Third Pass,Confirm understanding with new vocabulary,Media Duration,N/A (independent activity)
-6,Documentation,"Submit logs, vocab, and select SRS additions",5 min,Analyze comprehension patterns over time and resource level fit
-7,SRS Integration,Add selected vocabulary to learning systems,5 min,Suggest optimal SRS distribution strategy
+Lists & Queues-Grammar Study Queue
+Grammar Point,JLPT Level,Source,Scheduled Date,Notes,
+～たことがある,N5,BunPro,Practiced,2025-03-18,Completed initial practice; review needed in 1 week
 
 Activities-Priority tiers
 Tier,Description,WeeklyTarget,Notes
@@ -489,55 +695,62 @@ Tier,Description,WeeklyTarget,Notes
 2,Critical reinforcement activities,Complete 2-3 weekly,Supports integration of learned material
 3,Flexible enrichment,As time allows,Builds automaticity and enjoyment
 
-Goals-Specific Near-Term Goals
-Area,Goal
-GRAMMAR,Complete N4 grammar points in BunPro by June 2025
-KANJI,Reach WaniKani level 30 by September 2025
-WRITING,Progress from sentence completion to paragraph writing by May 2025
-PRONUNCIATION,Master basic pitch accent patterns for all common verbs by July 2025
-COMPREHENSION,Understand 80% of Nihongo con Teppei podcast without replay by August 2025
-
-Item tracking-Revisit queue
+Lists & Queues-Revisit Queue
 Revisit Date,Content,Type,First Exposure,Next step
 2025-03-23,NcT #680,Listening,2025-03-14,Re-listen
 
-Planner-Activity checklist 03-16-23
-Priority,Activity,Default Day,Planned Day,Resource,Status,Notes
-1,Grammar Expansion,Monday,Tuesday,BunPro - N5 review,TRUE,Preparation for たことがある on 3/24
-2,Shadowing,Tuesday,Friday,Nihongo con Teppei #680,FALSE,Using familiar content for better focus
-3,Writing Practice,Wednesday,Wednesday,Sentence completion exercises,TRUE,Focus on N5 grammar structures
-4,Listening Study,Thursday,Thursday,色々な日本語 Ep.21,TRUE,Complete unfinished episode
-5,Shadowing,Friday,N/A,N/A,FALSE,Already scheduled for this week
-6,Reading (Immersion),Flexible,Saturday,よつばと! Vol.2,FALSE,Optional flexible activity
-7,Reading (Study),Flexible,Sunday,よつばと! Vol.2,FALSE,Analyze grammar patterns and vocabulary
-8,Immersive Viewing,Saturday,Saturday,色々な日本語 (new episode),FALSE,Focus on cultural elements
+Learner Profile-Proficiency Measures
+Skill Area,Comprehension Level,Production Level,Notes
+Grammar,N5 mastered N4 learning,Basic sentence formation,
+Vocabulary,N5 partial N4 minimal,Limited active usage,
+Kanji,WK Level 23 (~900-1000 kanji),Recognition only,
+Reading,Simple manga with support,N/A,
+Listening,Simple clear speech ~80%,N/A,
+Speaking,N/A,Minimal practice,Intentionally delayed to focus on phonetics
+Pronunciation,Basic phonetics,Beginning pitch accent study,
+Writing,Basic sentences,"Painstaking, slow",Struggles to produce vocabulary
 
-Goals-Cultural Elements Study Goals
-Item,Details
-SEASONAL REFERENCES,Understanding of season-specific greetings and activities
-GIFT-GIVING PRACTICES,Appropriate language and customs around presents
-AGE/STATUS LANGUAGE,Different speech patterns based on relationship hierarchies
-INDIRECT COMMUNICATION,Recognizing and producing appropriate levels of directness
-EVERYDAY ETIQUETTE,Practical customs for daily interactions
-
-Long-term memory-Current SRS system states
-System,State
-WaniKani,Level 23/60
-BunPro,"N5: 110/126, N4: 74/177"
-
-Activities-SRS review workflow
+Legacy-Activities-SRS review workflow
 Step,Name,Description,Time,LLM Role
-1,Review Session,Complete due reviews in priority order (BP → Emurse → WK),Target time per app,N/A (independent activity)
+1,Review Session,Complete due reviews,Target time per app,N/A (independent activity)
 2,Session Logging,"Record duration, items reviewed, accuracy % for each app",1 min,N/A (independent activity)
 3,Report & Analysis,Submit logs to LLM for trend analysis,1 min,Analyze 7-day averages and recommend SRS adjustment
 4,Weekly Adjustment,Adjust new item rate based on LLM recommendations,1 min,Provide specific addition rate recommendations
 
+Planner-Weekly planner 03-23-25
+,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday
+WaniKani,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE
+BunPro,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+Emurse,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+Anki,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+Focus,,Grammar Expansion (BunPro - N5 review),Writing Practice (Sentence completion exercises),Listening Study (色々な日本語 Ep.21),Shadowing (Nihongo con Teppei #680),Immersive Viewing (色々な日本語 - new episode),Reading Study (よつばと! Vol.2)
+Flexible,,,,,,Reading Immersion (よつばと! Vol.2),
+
 Logs-SRS review log
 Date,Start Time,Duration (min),App,Items Reviewed,Accuracy %,Notes
+4/1/25,08:51,20,Emurse,67,100,
+3/31/25,10:22,45,BunPro,30,80,
+3/30/25,15:44,45,BunPro,29,62,Not the right headspace.
+3/29/25,12:14,37,Emurse,73,97,
+3/28/25,11:50,25,BunPro,19,79,
+3/28/25,09:13,12,Emurse,39,97,
+3/27/25,20:34,1,WaniKani,5,100,
+3/27/25,14:00,7,WaniKani,17,82,
+3/26/25,22:55,10,WaniKani,19,73,
+3/26/25,19:30,16,BunPro,16,100,
+3/25/25,22:29,40,BunPro,20,85,"- Recognizing the はず point but struggling to be confident about how to connect it with ちゃんと用意したPast, Standard, Expectedのに、歯ブラシ持って来るのを忘れた。 (was はずたった)
+    - I guessed ことがはず
+    - There was a clue in that the prompt had ""past""
+    - Since I know it's a noun, it also suggests I'm not clear on when nouns can connect directly to verbs"
+3/25/25,22:04,2,Dogen Lesson 13,,,
+3/25/25,08:55,9,BunPro,13,91,
+3/25/25,08:15,10,WaniKani,18,88,"平静constantly responding “still” instead of “calm, serene, tranquil”. In some ways it’s a synonym in English, but I want to remember to disambiguate from 静止."
+3/24/25,23:32,25,Emurse,88,94,
+3/24/25,22:41,6,BunPro,12,92,"was a little unsure about い-adjective[く]+する, I got it right but couldn’t remember for sure if it was +にする."
 3/23/25,21:06,0,WaniKani,2,100,
 3/23/25,20:30,30,BunPro,27,85,
-3/22/25,17:45,1,Anki,1,100,
 3/22/25,20:03,17,WaniKani,28,75,
+3/22/25,17:45,1,Anki,1,100,
 3/22/25,15:56,44,Emurse,88,96,
 3/22/25,14:02,25,BunPro,20,85,
 3/22/25,12:52,25,BunPro,9,100,Strolling around the hood getting a bagel. Got えんりょright this time.
@@ -579,86 +792,148 @@ Date,Start Time,Duration (min),App,Items Reviewed,Accuracy %,Notes
 3/11/25,10:47,6,WaniKani,9,66,
 3/10/25,23:53,41,BunPro,28,82,
 
-Goals-Content progression targets
+Lists & Queues-Cultural Elements Study Queue
+Topic,Description,Status,Resources
+Seasonal references,Understanding of season-specific greetings and activities,Pending,
+Gift-giving practices,Appropriate language and customs around presents,Pending,
+Age/status language,Different speech patterns based on relationship hierarchies,Pending,
+Indirect communication,Recognizing and producing appropriate levels of directness,Pending,
+Everyday etiquette,Practical customs for daily interactions,Pending,
+
+Planner-Activity checklist 03-16-25
+Priority,Activity,Default Day,Planned Day,Resource,Status,Notes
+1,Grammar Expansion,Monday,Tuesday,BunPro - N5 review,TRUE,Preparation for たことがある on 3/24
+2,Shadowing,Tuesday,Friday,Nihongo con Teppei #680,FALSE,Using familiar content for better focus
+3,Writing Practice,Wednesday,Wednesday,Sentence completion exercises,TRUE,Focus on N5 grammar structures
+4,Listening Study,Thursday,Thursday,色々な日本語 Ep.21,TRUE,Complete unfinished episode
+5,Shadowing,Friday,N/A,N/A,FALSE,Already scheduled for this week
+6,Reading (Immersion),Flexible,Saturday,よつばと! Vol.2,FALSE,Optional flexible activity
+7,Reading (Study),Flexible,Sunday,よつばと! Vol.2,FALSE,Analyze grammar patterns and vocabulary
+8,Immersive Viewing,Saturday,Saturday,色々な日本語 (new episode),FALSE,Focus on cultural elements
+
+Strategy & Goals-Skill Improvement Strategies
+Strategy Title,Skill Area,Strategy Details,Completion Condition,LLM Role,Learner Role
+SRS Backfill,Grammar,Put into practice grammar points that have already been mastered through SRS studies.,BunPro mastered grammar corpus feels sufficiently exercised,Suggest grammar points; provide writing prompts; analyze usage,Select points of interest; complete writing exercises; track points used
+Progressive Structure Reduction,Writing,Systematically decrease writing supports as proficiency develops: 1) Begin with complete templates and extensive vocabulary provided 2) Progress to partial frameworks with thematic vocabulary suggestions 3) Advance to topic and purpose guidance only 4) Culminate in independent writing with self-evaluation,Learner can comfortably produce coherent Japanese text with minimal external structure while maintaining grammar accuracy and appropriate vocabulary usage,"Design appropriate level of structure based on demonstrated ability, gradually reduce supports, monitor error rates during transition periods, provide targeted feedback on newly independent aspects","Utilize provided structures while pushing comfort boundaries, reflect on difficulties encountered when structure is reduced, actively apply feedback to subsequent writing attempts"
+Comprehensible Input Expansion,"Reading, Listening",Gradually increase complexity of input materials while maintaining comprehensibility,Can comprehend increasingly complex native materials with decreasing support,Select appropriate level materials; Provide strategic support; Analyze comprehension barriers,Engage with materials at i+1 level; Note comprehension challenges; Apply acquisition strategies
+Native Pattern Acquisition,Cultural Expression,Systematically studying and adopting communication patterns from authentic Japanese materials; prioritizing authenticity over convenience,Can produce writing that native speakers judge as natural-sounding rather than technically correct but foreign-feeling,Identify non-native patterns in writing; Provide authentic alternatives; Explain cultural context behind expressions,Study authentic materials; Collect idiomatic expressions; Practice emulating native patterns; Seek feedback on naturalness
+Structured Phonetics Progression,Phonetics,"Follow Dogen's comprehensive phonetics course and associated Emurse SRS system, using lessons as orientation and SRS drills for practice and reinforcement. Regulate the amount of material learned by not exceeding SRS review time targets.",Complete all course lessons and maintain proficiency in associated SRS items,Connect course concepts to broader language use; Supplement exercises; Suggest application opportunities; Help troubleshoot difficult elements,Complete course lessons; Perform SRS practice consistently; Record self-practice; Compare with native samples; Apply concepts in general language use
+Structured WaniKani progression,"Reading, Kanji, Vocabulary",Follow WaniKani’s comprehensive study and review system to learn their set of 2000 kanji and 6000 vocabulary based on those kanji,Complete all 60 levels of WaniKani,Analyze related activity logs and notes; find opportunities to leverage other activities to support current study level; track adherence to daily time targets,"Study enough to meet and not exceed review time targets, perform reviews daily"
+Structured BunPro Vocabulary progression,"Vocabulary, Reading",Follow BunPro’s JLPT learning order of vocabulary.,Completely learn all the vocabulary of N5 - N1,"Advise learning pace, taking into account review time targets and other, more integrated sources of vocabulary learning","Study enough to meet and not exceed review time targets, perform reviews daily"
+Structured BunPro Grammar progression,"Grammar, Reading",Follow BunPro’s JLPT learning order of grammar.,Completely learn all the grammar of N5 - N1,"Advise learning pace, taking into account review time targets and other, more integrated sources of vocabulary learning","Study enough to meet and not exceed review time targets, perform reviews daily"
+Leverage multiple skill area facets of BunPro,,,,,
+
+Legacy-Activities-Activity catalog
+Activity ID,Activity Type,Priority Tier,Description,Focus Area,Time,Focus,Context
+ACT-01,Grammar Expansion,1,Structured study and practice of specific grammar points with focus on production,Grammar Production,⏱️,🧠,📴
+ACT-02,Shadowing,1,Repeat immediately after native speaker focus on rhythm,Pronunciation,⏱️,🧠 📴,
+ACT-03,Shadowing (Advanced),1,Repeat with pitch accent focus record and analyze,Pitch Accent,⏱️,🧠 📴,
+ACT-04,Writing (Scaffolded),2,"Sentence completion, Q&A, and guided creation",Grammar Production,⏱️,🧠 📴,
+ACT-05,Listening (Immersion),2,First-pass listening for gist without interruption,Comprehension,⏱️,👂,📴
+ACT-06,Listening (Study),2,Multiple-pass detailed analysis with vocab mining,Vocabulary,⏱️⏱️,🧠,📴
+ACT-07,Reading (Immersion),2,Flow-focused reading with minimal lookups,Comprehension,⏱️/⏱️⏱️,👁️ 📴,
+ACT-08,Reading (Study),2,Intensive reading with analysis and mining,Vocabulary/Grammar,⏱️⏱️,🧠 📴,
+ACT-09,Immersive Viewing,3,Watching with Japanese subtitles 3-pass method,Cultural/Listening,⏱️⏱️,👁️ 📴,
+
+System-System Development List
+Item,Category,Status,Priority,Notes,Last_Updated
+Writing Analyzer Integration,System Enhancement,In Progress,Medium,Need to streamline copy-paste workflow; initial test conducted 2025-03-20,2025-03-20
+Activity Schema Revision,System Enhancement,In Progress,High,Restructuring activities into catalog-workflow-log format; Grammar expansion and Listening completed so far.,2025-03-20
+
+Activities-Activities Catalog
+Name,Description,Prerequisites,Capability Goals,Required Resources,Time Requirement,LLM Role
+Structured Writing Practice,"A supported writing exercise where learners compose Japanese text using provided frameworks (templates, example structures, thematic vocabulary). Reduces the cognitive burden of facing a blank page while practicing application of studied grammar points.","1) Topic selection with thematic vocabulary list
+2) Example text structures showing organizational patterns
+3) 2-3 target grammar points to incorporate",N5 Grammar Mastery; Active Vocabulary Recall; Basic Everyday Idioms Mastery,"Example text structures, thematic vocabulary lists, grammar point prompts, topic suggestions",20-30 minutes per session,"Provide support material: topic, thematic vocabulary suggestions, grammar point usage examples, and detailed feedback on compositions with correction of errors. Look for opportunities to reinforce material with compatible activities."
+Dogen Lesson Study,"Watch a Dogen phonetics lesson to learn a phonetics topic, then drill and learn the material using Emurse",Specify a lesson to study,Pitch Accent Fundamentals; Special Mora Mastery; Advanced Pitch Pattern Application,Dogen Phonetics Course; Emurse,"20 minutes to watch lesson, 20 minutes to drill items","Keep track of learner progress, analyze activity reports"
+Emurse SRS Review,Complete scheduled review sessions in Emurse,Available reviews,Pitch Accent Fundamentals; Special Mora Mastery; Advanced Pitch Pattern Application,Emurse,20 minutes daily target,"Analyze activity reports, adjust phonetics learning load to optimize time target adherence"
+WaniKani Study,"Learn new radicals, kanji, and vocabulary through WaniKani's structured lesson system in batches of 5",Planning cycle determination of weekly learning pace,WaniKani Level 30 Achievement,WaniKani,5 minutes per batch,"Keep track of learner progress, analyze activity reports"
+WaniKani SRS Review,"Complete scheduled review sessions to maintain retention of previously learned radicals, kanji, and vocabulary",Available reviews,WaniKani Level 30 Achievement,WaniKani,"10-15 min, daily target","Analyze activity reports, adjust WaniKani learning load to optimize time target adherence"
+BunPro Vocab Study,Learn new vocabulary,None,N5 Vocabulary Mastery,BunPro,1 minute per item,Advise rate of study and pick key vocab to study from mining list
+BunPro Grammar Study,Learn new grammar,None,,BunPro,5 minutes per item,Advise rate of study.
+Listening Immersion,Listening for overall comprehension without interruption,,"Basic Everyday Idioms Mastery, Pitch Accent Fundamentals",Any audio comprehension resource,Variable,Analyze activity reports and track resources to re-use in study mode.
+Listening Study,Multiple-pass detailed analysis with vocab mining and notes,Resource in revisit queue,"Basic Everyday Idioms Mastery, Pitch Accent Fundamentals",Any audio comprehension resource,Variable,"Analyze activity reports and mining lists items, suggest key vocabulary to add to BunPro reviews"
+Viewing Immersion,Watching for overall comprehension without pausing,,"Basic Everyday Idioms Mastery, Pitch Accent Fundamentals",Any visual comprehension resource,Variable,Analyze activity reports and track resources to re-use in study mode.
+Viewing Study,Multiple-pass detailed analysis with vocab mining and notes,Resource in revisit queue,"Basic Everyday Idioms Mastery, Pitch Accent Fundamentals",Any visual comprehension resource,Variable,"Analyze activity reports and mining lists items, suggest key vocabulary to add to BunPro reviews"
+Reading Immersion,Reading for overall comprehension without mining,,Basic Everyday Idioms Mastery,Any reading comprehension resource,Variable,Analyze activity reports and track resources to re-use in study mode.
+Reading Study,Close read aiming for full comprehension with vocab mining and notes,Resource in revisit queue,Basic Everyday Idioms Mastery,Any reading comprehension resource,Variable,"Analyze activity reports and mining lists items, suggest key vocabulary to add to BunPro reviews"
+
+Strategy & Goals-Capability Goals
+Name,Skill Area,Related Strategy,Goal Description,Timeline,Status,Success Indicators
+N5 Grammar Mastery,Grammar,SRS Backfill,Ability to use N5 grammar points in written and spoken exercises,May 2025,Active,Self-assessment (1-5 scale); Error-free grammar point usage count; Lookup frequency trend
+N5 Vocabulary Mastery,Vocabulary,Structured BunPro Vocabulary progression,Ability to use N5 vocabulary in written and spoken exercises,July 2025,Active,Complete study of all points; achieve master status in BunPro SRS; rapid and error-free vocabulary use
+Active Vocabulary Recall,Vocabulary,Progressive Structure Reduction,Demonstrate ability to summon appropriate vocabulary on demand when writing about familiar topics without excessive dictionary usage,June 2025,Active,Increasing vocabulary diversity; Composition time decreasing; Vocabulary recall fluency self-assessment
+Basic Everyday Idioms Mastery,Cultural Expression,Native Pattern Acquisition,"Master 30 common idiomatic expressions used in daily conversations and correspondence, demonstrating appropriate contextual usage",June 2025,Planned,Decreasing corrections for “naturalness” and increasing use of オノマトペin output
+Pitch Accent Fundamentals,Phonetics,Structured Phonetics Progression,Master fundamental pitch accent patterns and rules as presented in Dogen's introductory lessons,April 2025,Active,High accuracy levels in Emurse reviews.
+Special Mora Mastery,Phonetics,Structured Phonetics Progression,"Correctly produce and perceive all special mora sounds (long vowels, geminate consonants, moraic nasal)",June 2025,Planned,Self-recording self-assessment
+Advanced Pitch Pattern Application,Phonetics,Structured Phonetics Progression,Apply correct pitch patterns across word boundaries and in various grammatical constructions,August 2025,Planned,Self-recording self-assessment
+WaniKani Level 30 Achievement,"Reading, Kanji, Vocabulary",Structured Kanji and vocabulary progression,Reach level 30 in WaniKani,September 2025,Active,Review efficiency score (time vs. accuracy); WaniKani level progression rate
+,"Reading, Listening",Comprehensible Input Expansion,,,Active,
+
+Logs-Template Logs
+Date,Start Time,Duration,Notes
+,,,
+
+Legacy-Activities-Listening (Immersion) workflow
+Step,Name,Description,Time,LLM Role
+1,Preparation,Select content and prepare environment,5 min,Resource recommendation based on current level
+2,Listen,Listen without pausing for general understanding,Media Duration,N/A (independent activity)
+4,Reflection,Consider anything that stood out,5 min,N/A (independent activity)
+6,Documentation,Submit logs,5 min,Analyze comprehension patterns over time and resource level fit
+
+Logs-Dogen Lesson Study Logs
+Date,Start Time,Duration,Lesson #,Topic,New Items,Notes
+4/1/25,09:11,7,10,Pitch accent for nouns in phrases,36,
+3/25/25,10:45,20,13,,,
+3/25/25,10:15,30,12,,,
+20205-03-22,15:30,25,9,,,re-view
+20205-03-22,16:56,67,10 & 11,,,"Lesson 10 review, lesson 11 (test 39/55)"
+
+Resources-Resource Catalog
+Resource,Type,Description,State,Time Requirements,Focus Requirements,Context Requirements,Notes
+WaniKani,SRS,Structured instruction and SRS for ~2000 Kanji and ~6000 vocabulary,Level 23/60,⏰/⏱️,👁️,📱 Flexible,Works offline for review submission
+BunPro,SRS,"Structured instruction and SRS for all JLPT grammar and vocab, with a large corpus of example sentences and native readings. Decks tailored to specific books at various proficiency levels are also available, such as よつばと！","N5 Grammar: 110/126, N4 Grammar: 74/177",⏰/⏱️,👁️,🔌 Online Required,Needs connectivity for submission
+Emurse,SRS,"Structured instruction and SRS corresponding to the content of the Dogen Phonetics course. Reviews include self-recording, comparison to a native speaker, and pitch graphs.",In sync with Dogen Phonetics Course,⏱️,🧠,🏠 Location-specific,Requires quiet environment for self-recording
+Dogen Phonetics Course,Course,"Fairly comprehensive course covering pitch accent and phonetics, in 80 lessons",Lesson 10,⏱️⏱️,👁️,📴 Offline,"Requires visual attention, can download videos to watch offline."
+Nihongo con Teppei,Podcast,"3 - 5 minute episodes focusing on a single topic. Mix of clearly enunciated and naturally spoken speech, advanced beginner level",Listened to 714/1334 episodes,⏱️,👂/🎧,📴 Offline,Downloaded episodes
+色々な日本語,YouTube,"Instructor reads a manga, or describes an anime through still frames, while explaining what’s happening in Japanese. Uses real-time on screen annotations to enhance explanations and sometimes teach grammar. Extremely clear, explanitory immersion.",,⏱️⏱️,👁️,🔌 Online Required,"Requires visual attention, can download videos to watch offline."
+よつばと!,Manga,It’s the よつばと！ manga,Halfway through vol 2,⏱️/⏱️⏱️,👁️,📱 Flexible,Physical book needed
+Speak Japanese Naturally,YouTube,An immersion and natural speech instruction channel,,⏱️⏱️,👁️,📴 Offline,"Requires visual attention, can download videos to watch offline."
+Anki,SRS,The OG custom SRS flashcard app,N/A,⏰/⏱️/⏱️⏱️,👁️,📴 Offline,Mainly used for problem correction strategy. Requires net connection to sync state
+Todaii Reader,News App,Presents current news articles and videos with convenient in-line lookup of vocabulary and some study aids,N/A,⏱️⏱️,🧠,🔌 Online Required,
+
+System-Activity Implementation Backlog
+Activity Name,Purpose
+Text Pattern Recognition,Recognize common Japanese text structures through reading
+Thematic Vocabulary Collection,Build topic-based vocabulary clusters
+Grammar Application Analysis,Study how specific grammar points function in authentic texts
+Guided Revision Practice,Revise previous structured writing with specific improvement focus
+Decreasing Structure Writing,Gradually reduce structural supports as capability develops
+Feedback Application Practice,Apply specific feedback from previous writing to new compositions
+Text Reconstruction,Rebuild scrambled Japanese texts into proper order
+Structure Adaptation,Adapt the same content to different text structures
+Reading-to-Writing Bridge,Extract structures from reading material for immediate writing application
+Translation Practice,Convert English text to Japanese to practice natural expression
+
+Legacy-Targets-Content progression targets
 Content Type,Material,Current Status,Next Milestone,Timeline,Next Technique Level
 Manga,よつばと！,Volume 2 (44%),Complete Volume 2,April 2025,Selective vocabulary lookup
 News,Todaii Reader,Beginner articles,NHK Easy News,July 2025,Skimming for main points
 Podcast,Nihongo con Teppei,Beginner episodes,80% first-listen comprehension,August 2025,Reduced replay frequency
 Video,いろいろな日本語,Regular viewing,Introduce slice-of-life vlogs,May 2025,Occasional subtitle use
 
-Logs-SRS study log
-Date,Start Time,Duration (min),App,Items Studied,Notes
-,,,,,
+Logs-Listening study log
+Date,Start Time,Total Duration (min),Resource,Episode,Media Length,First Pass Rating,Second Pass Rating,Third Pass Rating,Words Mined,Added to SRS,Notes
+3/28/25,10:54,20,Mochi real Japanese - If you you are N5 level,Na,8:04,4,5,5,1,1,
+3/14/25,,40,Nihongo Con Teppei,680,04:00,3,5,5,15,5,"Covered topics: hair styles, seasonal food, and onomatopoeia"
+3/15/25,,16,色々な日本語,21: よつばと！,26:54,,,,,,"Incomplete session, continued on 2025-03-20"
+3/20/25,,10:54,色々な日本語,21: よつばと！,26:54,5,,,,,Finished on train. Very understandable
 
-Vocab mining-Comprehension mining
-Word,Reading,English Meaning,Added to SRS,品詞,Context Sentence,Source,Episode,Date
-モジャモジャ,もじゃもじゃ,messy/shaggy (hair),FALSE,擬態語,,NcT,680,2025-03-20
-ひげ,ひげ,beard/mustache,TRUE,名詞,,NcT,680,2025-03-20
-ボサボサ,ぼさぼさ,disheveled/messy (hair),FALSE,擬態語,,NcT,680,2025-03-20
-ととのえ,ととのえ,to arrange/put in order,FALSE,名詞/動詞,,NcT,680,2025-03-20
-ほくほく,ほくほく,warm and fluffy (food),FALSE,擬態語,,NcT,680,2025-03-20
-焼き芋,やきいも,baked/roasted sweet potato,FALSE,名詞,,NcT,680,2025-03-20
-ふゆ,ふゆ,winter,TRUE,名詞,,NcT,680,2025-03-20
-さつまいも,さつまいも,sweet potato,FALSE,名詞,,NcT,680,2025-03-20
-あき,あき,autumn/fall,TRUE,名詞,,NcT,680,2025-03-20
-なべ,なべ,pot/pan,TRUE,名詞,,NcT,680,2025-03-20
-ポカン,ぽかん,blank expression/dumbfounded,TRUE,擬態語,,NcT,680,2025-03-20
-ぎたいご,ぎたいご,mimetic word,FALSE,名詞,,NcT,680,2025-03-20
-ぎおんご,ぎおんご,onomatopoeic word,FALSE,名詞,,NcT,680,2025-03-20
-とにかく,とにかく,anyway/anyhow/at any rate,FALSE,副詞,,NcT,680,2025-03-20
-ふくしゅう,ふくしゅう,review/revision,FALSE,名詞/する動詞,,Writing practice,2025-03-20,2025-03-20
-持ち帰り,もちかえり,takeout/to take home,FALSE,名詞/する動詞,,Writing practice,2025-03-20,2025-03-20
-食べ残し,たべのこし,leftovers (from eating),TRUE,名詞,,Writing practice,2025-03-20,2025-03-20
-食い残し,くいのこし,leftovers (cruder form),FALSE,名詞,,Writing practice,2025-03-20,2025-03-20
-辞書形,じしょけい,dictionary form (grammar term),FALSE,名詞,,Writing practice,2025-03-20,2025-03-20
-
-Goals-Writing progression targets
+Legacy-Targets-Writing progression targets
 Stage,Timeframe,Format,Volume,Focus,Techniques
 Stage 1,Current-April 2025,Sentence completion,3-5 sentences,Basic construction,"Q&A, translations, completion"
 Stage 2,May-July 2025,Connected sentences,5-7 sentences,Topic coherence,"Journaling, storytelling"
 Stage 3,August-October 2025,Multi-paragraph,8-12 sentences,Logical structure,"Opinions, processes, narratives"
 Stage 4,November 2025-January 2026,Essays,15+ sentences,Stylistic variation,"Compare/contrast, register shifts"
-
-Long-term memory-System status
-Item,Category,Status,Priority,Notes,Last_Updated
-Writing Analyzer Integration,System Enhancement,In Progress,Medium,Need to streamline copy-paste workflow; initial test conducted 2025-03-20,2025-03-20
-Activity Schema Revision,System Enhancement,In Progress,High,Restructuring activities into catalog-workflow-log format; Grammar expansion and Listening completed so far.,2025-03-20
-
-Activities-Resource libaray
-Resource ID,Resource Name,Type,Compatible Activities,Status,Relative comprehension level,Notes
-RES-01,WaniKani,SRS,Core SRS,Active,N/A,Level 23/60 Lifetime subscription
-RES-02,BunPro,SRS,"Core SRS, ACT-01",Active,N/A,"N5(110/126), N4(74/177), Lifetime"
-RES-03,Emurse,SRS,"Core SRS, ACT-03",Active,N/A,Dōgen course integration $50/yr
-RES-04,Nihongo con Teppei,Podcast,"ACT-02, ACT-05, ACT-06",Active,+ 25%,Episodes 670-685 downloaded
-RES-05,よつばと!,Manga,"ACT-07, ACT-08",Active,+ 35%,"Volumes 1-2 physical, BunPro deck available"
-RES-06,色々な日本語,YouTube,"ACT-05, ACT-09",Active,On-level,$3/mo subscription
-RES-07,Speak Japanese Naturally,YouTube,"ACT-02, ACT-03, ACT-05",Available,Unknown,Not currently in regular rotation
-RES-08,Anki,SRS,Problem correction,Active,N/A,Problem correction system only
-RES-09,Todaii Reader,News App,"ACT-07, ACT-08",Available,Varies,Not currently in regular rotation
-
-Item tracking-Learning questions: Conceptual understanding
-Question ID,Question,Category,Date Asked,Research Notes,Resolution Status
-Q-001,"Why is ""私のこと"" used instead of 私？",Grammar,2025-03-19,Sometimes こと is used to objectify oneself in certain expressions,Open
-Q-002,指の長い feels weird - why is word order reversed?,Grammar,2025-03-19,This is an adjectival clause pattern (attributive),Open
-Q-003,How to determine which nouns compound vs requiring の?,Grammar,2025-03-19,Seems to depend on word origin and usage frequency,Open
-Q-004,What's the difference between さっそく and さっさと?,Vocabulary,2025-03-19,,Open
-Q-005,What's the difference between 葉 and 葉っぱ?,Vocabulary,2025-03-19,,Open
-
-Logs-Phonetics Study log
-Date,Study,Duration (min),Resource,Start Time,Notes
-20205-03-22,Phonetics,25,Dogen phonetics,15:30,Lesson 9 review
-20205-03-22,Phonetics,67,Dogen phonetics,16:56,"Lesson 10 review, lesson 11 (test 39/55)"
-
-Logs-Listening study log
-Date,Start Time,Total Duration (min),Source,Episode,Media Length,First Pass Rating,Second Pass Rating,Third Pass Rating,Words Mined,Added to SRS,Notes
-3/14/25,,40,Nihongo Con Teppei,680,04:00,3,5,5,15,5,"Covered topics: hair styles, seasonal food, and onomatopoeia"
-3/15/25,,16,色々な日本語,21: よつばと！,26:54,,,,,,"Incomplete session, continued on 2025-03-20"
-3/20/25,,10:54,色々な日本語,21: よつばと！,26:54,5,,,,,Finished on train. Very understandable
-
-Long-term memory-Grammar expansion queue
-Priority,Grammar Point,JLPT Level,Source,Scheduled Date,Notes,
-1,～たことがある,N5,BunPro,Practiced,2025-03-18,Completed initial practice; review needed in 1 week
-2,～を + motion verbs (通る、渡る),N5,BunPro,Queued,2025-03-24,Selected to reinforce direct object を usage
-3,～が好き・嫌い,N5,BunPro,Queued,2025-03-31,Will contrast が vs を particle usage
 
 END MEMORY TRANSFER
